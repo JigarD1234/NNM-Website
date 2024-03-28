@@ -1,0 +1,210 @@
+.investor-row {
+    background-color: black;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.investor-headings h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.investor-headings h3 a,
+.investor-headings H3 {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: .3s all;
+}
+
+.investor-headings h3 a:hover {
+    color: #ffae42;
+}
+
+.investor-marquee marquee {
+    color: rgb(223, 223, 223);
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links {
+    padding: 20px 100px;
+}
+
+.footer-links .links h3 {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.footer-links .links h3::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 30px;
+    left: 0;
+    background-color: #ffae42;
+}
+
+.footer-links .policy-links .list-content {
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+}
+
+.list-content ul,
+.social-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 15px;
+    gap: 10px;
+}
+
+.list-content ul li,
+.social-links ul li {
+    color: white;
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.registration-numbers p {
+    color: white;
+    font-size: 12px;
+}
+.compliance-section{
+    padding: 3% 0;
+    /* border: 1px solid white; */
+}
+.compliance-row{
+    display: flex;
+    align-items: start;
+    
+}
+.compliance-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    /* border: 1px solid white; */
+    
+    
+}
+.compliance-col h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ffae42;
+}
+.compliance-col ul{
+    /* padding-top: 3%; */
+    font-size: 14px;
+}
+.compliance-outer-list{
+    display: flex;
+    gap: 5px;
+    padding-top: 3%;
+
+    flex-direction: column;
+}
+.compliance-outer-list li{
+    list-style: none;
+}
+
+.compliance-inner-list{
+    display: flex;
+    gap: 20px;
+    padding-left: 5%;
+}
+.compliance-inner-list li{
+    list-style: none;
+}
+.compliance-outer-list li span{
+    font-size: 20px;
+}
+.compliance-contact-list{
+
+    display: flex;
+    gap: 10px;
+}
+.compliance-contact-list li{
+    display: flex;align-items: center;
+    gap: 10px;
+}
+.marquee-second{
+    display: flex;
+    padding-bottom: 2%;
+
+}
+.second-marquee-col{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.second-marquee-col h3{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffae42;
+}
+.second-marquee-col marquee{
+    font-size: 13px;
+    color:rgb(210, 210, 210);
+}
+.copyright{
+    color: rgb(171, 171, 171);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+    font-size: 13px;
+}
+@media screen and (max-width:768px) {
+    .investor-row{
+        padding: 0px;
+        padding: 5% 5%;  
+    }
+    .footer-links{
+        padding: 0;
+        padding: 5%;
+    }
+    .footer-links .links:not(:first-child){
+        padding-top: 10%;
+    }
+    .social-links{
+        /* border: 1px solid white; */
+        width: 45%;
+    }
+    .registration-numbers {
+        width: 55%;
+        
+    }
+    .compliance-section{
+        /* border: 1px solid white; */
+        margin: 5%;
+    }
+    .compliance-contact{
+        margin-top: 7%;
+    }
+    .marquee-second{
+        margin: 2%;
+    }
+    .copyright{
+        padding: 3% 0;
+    }
+   
+}

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+    font-family: "Overpass", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+    font-family: "Unna", serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    word-spacing: 0px;
+}
+
+button {
+    /* font-family: "Overpass", sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+.sec-headers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-headers h3 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+.sec-headers h3::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: #ffae42;
+    left: 35%;
+    top: 110px;
+    margin: 1px auto;
+}
+
+.sec-headers p {
+    color: rgb(207, 207, 207);
+    text-transform: capitalize;
+    padding-bottom: 50px;
+}
+
+.sec-headers-dark h3 {
+    color: white;
+}
+
+.sec-headers-light h3 {
+    color: black;
+}
+
+.sec-headers-light p {
+    color: rgb(33, 33, 33);
+}
+
+.imported-icons {
+    padding-right: 3px;
+    font-size: 20px;
+    padding-bottom: 3px;
+    color: #ffae42;
+}
+
+hr {
+    color: grey;
+    opacity: 1;
+    width: 100%;
+    margin: 0;
+}
+
+.popup-show {
+    display: block;
+}
+
+.popup-hide {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFAE42;
+    border-radius: 10px;
+}
+
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    margin-top: 2%;
+    padding: 1% 3%;
+    /* width: 30%; */
+    text-align: center;
+    cursor: pointer;
+    /* box-shadow: 1px 1px  2px white; */
+}
+
+.btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(211, 211, 211, 0.1);
+
+    transition: all 0.3s;
+}
+
+.btn-three:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+    box-shadow: none;
+}
+
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid #ffae42;
+    transform: scale(1.2, 1.2);
+
+}
+
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+    box-shadow: none;
+}
+
+.animated-button {
+    background: linear-gradient(-30deg, #2b1a08 50%, #2b1a08 50%);
+    padding: 15px 40px;
+   
+    margin: 12px;
+    display: inline-block;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    overflow: hidden;
+    color: #d4e0f7;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'unna';
+    text-decoration: none;
+    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+}
+
+.animated-button:hover::before {
+    opacity: 0.2;
+}
+
+.animated-button span {
+    position: absolute;
+}
+
+.animated-button span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(8, 20, 43, 0)), to(#ffae42));
+    background: linear-gradient(to left, rgba(8, 20, 43, 0), #ffae42);
+    -webkit-animation: 2s animateTop linear infinite;
+    animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+@media screen and (max-width:768px){
+    .sec-headers h3{
+        font-size: 25px;
+    }
+}

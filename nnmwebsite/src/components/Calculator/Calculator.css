@@ -1,0 +1,83 @@
+.calculator-tables{
+    width: 100%;
+    background-color: #09090A;
+    min-height: 100vh;
+    padding-top: 50px;
+    
+}
+
+.calculator-headings{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.calculator-headings h3{
+    color: black;
+    background-color: #edede8;
+    width: 50%;
+    margin-top: 30px;
+    padding: 8px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+h3.heading-active{
+    background-color: #ffae42;
+}
+.table-hidden{
+    display: none;
+}
+.table-show{
+    display: block;
+}
+.brokerage-tables{
+    margin-top: 50px;
+}
+.equity-delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.equity-heading{
+    background-color: #ffae42;
+    text-align: center;
+}
+h3.equity-heading{
+    padding: 8px 20px;
+    font-size: 16px;
+    width: 90%;
+}
+.equity-delivery ul{
+    width: 90%;
+    background-color:#edede8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.equity-delivery ul li{
+    list-style: none;
+    font-size: 11px;
+    text-align: center;
+    margin: 10px 5px;
+    
+}
+.equity-delivery ul li input  , .equity-delivery ul li select{
+    width: 80px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.equity-delivery ul li input:focus , .equity-delivery ul li select:focus{
+    border: 0.5px solid #b8b8b8;
+    outline: none;
+}
+#equity-table1{
+    max-width: 90%;
+}
+#equity-table1 th{
+    font-size: 15px;
+    font-weight: 500;
+}
+
