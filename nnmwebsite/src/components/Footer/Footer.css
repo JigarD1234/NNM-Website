@@ -98,9 +98,6 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    /* border: 1px solid white; */
-    
-    
 }
 .compliance-col h3{
     text-transform: uppercase;
@@ -109,7 +106,6 @@
     color: #ffae42;
 }
 .compliance-col ul{
-    /* padding-top: 3%; */
     font-size: 14px;
 }
 .compliance-outer-list{
@@ -173,6 +169,30 @@
     padding: 1% 0;
     font-size: 13px;
 }
+.escalation-matrix {
+    background-color: #1c1c1c;
+}
+.escalation-matrix ul{
+    color: white;
+    display: flex;
+    gap: 5%;
+    padding: 1.5% 0;
+    
+}
+.escalation-matrix ul li{
+        list-style:none;
+        background-color: #494949;
+        color: white;
+        padding: 7px 24px;
+        font-size: 14px;
+        cursor: pointer;   
+        transition: .6s all;
+}
+.escalation-matrix ul li:hover{
+    /* color: #ffae42; */
+    box-shadow: inset 0px 100px 2px #ffae42 ;
+    color: black;
+}
 @media screen and (max-width:768px) {
     .investor-row{
         padding: 0px;
@@ -197,6 +217,7 @@
         /* border: 1px solid white; */
         margin: 5%;
     }
+    
     .compliance-contact{
         margin-top: 7%;
     }

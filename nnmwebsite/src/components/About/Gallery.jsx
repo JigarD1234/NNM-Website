@@ -7,11 +7,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import celebrationvector from '../../assets/vector/celebration_vector.png'
 import 'swiper/css/scrollbar';
 
 
 const Gallery = () => {
-
+   
     const [photoActive, setPhotoActive] = useState("category1");
     const [selectedImage, setSelectedImage] = useState(null);
 
@@ -30,42 +31,24 @@ const Gallery = () => {
     const categories = [
         {
             id: "category1",
-            categoryName: "Events",
-            photos: ['https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1536759808958-bcc29b661ec6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1536759808958-bcc29b661ec6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',]
+            categoryName: "IPO Listings",
+            photos: Array.from({ length: 8 }, (_, index) => `/gallery/ipo${index + 1}.jpeg`)
         },
         {
             id: "category2",
-            categoryName: "Birthday",
-            photos: ['https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&              ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D',
-                'https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D']
+            categoryName: "Meet-ups",
+            photos: Array.from({ length: 8 }, (_, index) => `/gallery/meetup${index + 1}.jpeg`)
         },
         {
             id: "category3",
-            categoryName: "Festivals"
+            categoryName: "Celebration At NNM",
+            photos: Array.from({ length: 8 }, (_, index) => `/gallery/celebration${index + 1}.jpeg`)
         },
         {
             id: "category4",
-            categoryName: "Visits"
-        },
-        {
-            id: "category5",
-            categoryName: "Business"
+            categoryName: "Outdoor"
         }
     ];
-
 
     return (
         <>
@@ -79,25 +62,31 @@ const Gallery = () => {
                     <div className='container'>
                         <div className='row photo-wrapper'>
                             <div className='col-lg-3 photo-categories'>
-                                <h3>Collection</h3>
+                                <img src={celebrationvector} />
+
+                                {/* <h3>Collection</h3> */}
                                 <ul>
                                     {categories.map((category) => (
-                                        <PhotoCategory
-                                            key={category.id}
-                                            category={category}
-                                            isActive={photoActive === category.id}
-                                            handlePhotoChange={handlePhotoChange}
-                                        />
-                                        
+                                        <>
+                                            <PhotoCategory
+                                                key={category.id}
+                                                category={category}
+                                                isActive={photoActive === category.id}
+                                                handlePhotoChange={handlePhotoChange}
+                                            />
+                                        </>
+
                                     ))}
                                 </ul>
                             </div>
                             <div className='col-lg-9 photo-outer-box'>
+                            <h2 style={{padding:"2%" , textAlign:'center', backgroundColor:"#09090A" , color:"white"}}>{categories.map(category=>(
+                                photoActive === category.id ? category.categoryName : ''
+                            ))}</h2>
                                 <div className='photo-box'>
                                     <PhotoGallery photos={categories.find(cat => cat.id === photoActive)?.photos || []}
                                         handleImageClick={handleImageClick}
                                     />
-
                                 </div>
                             </div>
                         </div>
@@ -149,10 +138,6 @@ const Gallery = () => {
                     </Swiper>
                     <div className='swiper-button-prev gallery-prev d-none'></div>
                     <div className='swiper-button-prev gallery-next d-none'></div>
-
-
-
-
                 </div>
 
             </div >)

@@ -9,11 +9,8 @@ import BlogSidebar from './BlogSidebar';
 
 const Blog = ({blogs}) => {
     const sortedBlogs = blogs.sort((a, b) => {
-        // Convert dates to Date objects for comparison
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
-        
-        // Compare dates
         return dateB - dateA;
     });
 
@@ -26,7 +23,6 @@ const Blog = ({blogs}) => {
     return (
         <>
             <BlogHeader/>
-
             <div className='blogs-wrapper'>
 
                 <div className='container'>
@@ -34,7 +30,6 @@ const Blog = ({blogs}) => {
                         <div className='col-lg-9 article-col'>
                             <h4>Latest Blogs</h4>
                             <br /><hr style={{ width: "95%" }}></hr><br />
-
                             <div className='articles mt-3'>
                                 {blogs.map(blog => (
                                     <ArticleCard key={blog.id}

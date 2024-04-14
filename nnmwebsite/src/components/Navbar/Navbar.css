@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  align-items: start;
+  align-items: center;
 }
 
 .nav-elements ul li {
@@ -34,7 +34,6 @@
   color: rgb(188, 188, 188);
   text-decoration: none;
   transition: color 0.3s ease;
-
 }
 
 .nav-elements ul a:hover {
@@ -56,6 +55,7 @@
   box-shadow: 1px 1px 5px rgb(124, 124, 124);
   opacity: 0;
   transition: opacity 0.5s ease;
+  
 }
 
 .dropdown-menu a {
@@ -73,37 +73,61 @@
   opacity: 1;
   display: flex;
   flex-direction: column;
-  
+  align-items: start;
 }
 
 .dropdown-menu li a:hover {
   color: white;
 }
 
-@media (max-width: 768px) {
+#login-nav-btn{
+  /* border: 1px solid white; */
+  padding: 6px 24px;
+  background-color: #ffae42;
+  cursor: pointer;
+}
+#login-nav-btn a{
+  color: black;
+}
+.nav-list-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 50px;
+}
+.nav-list-icons .n-icons{
+  background-color: rgb(185, 185, 185);
+  color: black;
+  padding: 5%;
+  font-size: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .3s all;
+}
+.nav-list-icons .n-icons:hover{
+  background-color: #ffae42;
+  color: white;
+}
+
+@media (max-width: 1168px) {
   #main-links {
     padding-left: 50px;
   }
-
   .dropdown-menu {
     width: 70%;
   }
-
   .nav-elements ul {
     flex-direction: column;
     gap: 20px;
   }
-
   .dropdown-menu a:not(:last-child) {
     margin-bottom: 0px;
     font-size: 15px;
-
   }
-
-
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1168px) {
   .menu-icon {
     display: block;
     cursor: pointer;

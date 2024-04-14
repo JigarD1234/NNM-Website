@@ -1,23 +1,14 @@
 import React from 'react';
-import { FaBriefcase as WorkIcon, FaGraduationCap as SchoolIcon, FaStar as StarIcon } from 'react-icons/fa';
+import { FaStar as StarIcon } from 'react-icons/fa';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import AboutHeader from './AboutHeader';
-import blueTelos from '../../assets/timeline/telosbluelogo.png'
-import buildingLogo from '../../assets/timeline/buildinglogo.png'
-import SME from '../../assets/timeline/smelogo.png'
-import cdsl from '../../assets/timeline/cdsl.png'
-import bse from '../../assets/timeline/bse.png'
-import currencyLogo from '../../assets/timeline/currencylogo.png'
-import certified from '../../assets/timeline/certified.png'
-import handplant from '../../assets/timeline/handplantlogo.png'
 import './About.css'
 
 function Timeline() {
     return (<>
         <AboutHeader heading="Milestones"/>
-        
-
+    
         <div className='milestones-timeline'>
             <div className='sec-headers'>
                 <h3><span>NNM </span>Milestone</h3>
@@ -30,7 +21,7 @@ function Timeline() {
                 contentArrowStyle={{ borderRight: '7px solid #ffae42' }}
                 date="2019 - present"
                 iconStyle={{ background: 'white', color: '#fff',display:"flex", justifyContent:"center", alignItems:"center"}}
-                icon={<img src={buildingLogo} width="100%" style={{zIndex:"-1"}} />}
+                icon={<img src='/Milestones/buildinglogo.png' width="100%" style={{zIndex:"-1"}} />}
             >
                 <h3 className="vertical-timeline-element-title timeline-heading">Incorporation of PMS.</h3>
                 <p>
@@ -42,7 +33,7 @@ function Timeline() {
                 date="2019"
                 iconStyle={{ background: 'white', color: '#fff',display:"flex", justifyContent:"center", alignItems:"center"}}
 
-                icon={<img src={SME} width="100%"/>}
+                icon={<img src='/Milestones/smelogo.png' width="100%"/>}
             >
                 <h3 className="vertical-timeline-element-title">SME's NNM Group.</h3>
                 {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
@@ -55,7 +46,7 @@ function Timeline() {
                 date="2018"
                 iconStyle={{ background: 'white', color: '#fff',display:"flex", justifyContent:"center", alignItems:"center"}}
 
-                icon={<img src={cdsl} width="100%"/>}
+                icon={<img src='/Milestones/cdsl.png' width="100%"/>}
             >
                 <h3 className="vertical-timeline-element-title">10th SMEs NNM Group.</h3>
                 {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
@@ -68,10 +59,9 @@ function Timeline() {
                 date="2018"
                 iconStyle={{ background: 'white', color: '#fff',display:"flex", justifyContent:"center", alignItems:"center"}}
 
-                icon={<img src={bse} width="80%"/>}
+                icon={<img src='/Milestones/bse.png' width="80%"/>}
             >
                 <h3 className="vertical-timeline-element-title">Tasty Diary Advisory and Market Maker</h3>
-                {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
                 <p>
                 Advisory and Market Maker to the company, NNM Group was able to get 98 times over subscription for Tasty Diary Specialties Ltd.
                 </p>
@@ -81,10 +71,9 @@ function Timeline() {
                 date="2017"
                 iconStyle={{ background: 'white', color: '#fff',display:"flex", justifyContent:"center", alignItems:"center"}}
 
-                icon={<img src={currencyLogo} width="100%"/>}
+                icon={<img src='/Milestones/currencylogo.png' width="100%"/>}
             >
                 <h3 className="vertical-timeline-element-title">NNM NextGen Pvt. Ltd.</h3>
-                {/* <h4 className="vertical-timeline-element-subtitle">Online Course</h4> */}
                 <p>
                 Formation of NNM NextGen Advisory Pvt. Ltd. a Compliance Partner and Advisory to Companies
                 </p>
@@ -94,7 +83,7 @@ function Timeline() {
                 date="2016"
                 iconStyle={{ background: 'white', color: '#fff',display:"flex", justifyContent:"center", alignItems:"center"}}
 
-                icon={<img src={certified} width="80%"/>}
+                icon={<img src='/Milestones/certified.png' width="80%"/>}
             >
                 <h3 className="vertical-timeline-element-title">Certified</h3>
                 {/* <h4 className="vertical-timeline-element-subtitle">Certification</h4> */}
@@ -107,7 +96,7 @@ function Timeline() {
                 date="2013"
                 iconStyle={{ background: 'white', color: '#fff',display:"flex", justifyContent:"center", alignItems:"center"}}
 
-                icon={<img src={handplant} width="100%"/>}
+                icon={<img src='/Milestones/handplantlogo.png' width="100%"/>}
             >
                 <h3 className="vertical-timeline-element-title">MSE
 NNM Securities Pvt. Ltd.</h3>

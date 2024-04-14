@@ -1,6 +1,6 @@
-import React from 'react'
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -15,9 +15,7 @@ const Testimonials = () => {
                     <h3>Testimonials</h3>
                 </div>
                 <div className='container swipper-wrapper'>
-
                     <Swiper
-
                         breakpoints={{
                             1400: {
                                 // width: 576,
@@ -28,8 +26,6 @@ const Testimonials = () => {
                                 slidesPerView: 1,
                             },
                         }}
-
-
                         style={{
                             paddingBottom:"80px", "--swiper-pagination-color": "#FFBA08",
                             "--swiper-pagination-bullet-inactive-color": "#999999",
@@ -39,25 +35,17 @@ const Testimonials = () => {
                         }}
                         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                         spaceBetween={40}
-                        // slidesPerView={1}
-                        // navigation
                         autoplay={{ delay: 5000 }}
                         pagination={{ clickable: true }}
                         onSwiper={(swiper) => console.log(swiper)}
                         onSlideChange={() => console.log('slide change')}
-
-
-
                     >
-
                         <SwiperSlide className='swiper-slides border'><TestimonialCard /></SwiperSlide>
                         <SwiperSlide className='swiper-slides border'><TestimonialCard /></SwiperSlide>
                         <SwiperSlide className='swiper-slides border'><TestimonialCard /></SwiperSlide>
                         <SwiperSlide className='swiper-slides border'><TestimonialCard /></SwiperSlide>
                         <SwiperSlide className='swiper-slides border'><TestimonialCard /></SwiperSlide>
                         <SwiperSlide className='swiper-slides border'><TestimonialCard /></SwiperSlide>
-
-
                     </Swiper>
 
                 </div>

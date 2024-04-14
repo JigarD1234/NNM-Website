@@ -1,15 +1,7 @@
-import React from 'react'
 import './About.css'
-import aboutus from '../../assets/aboutus.png'
-import aboutus2 from '../../assets/financialsolutionpn.png'
-import awardsImage from '../../assets/awardsimage.jpg'
 import AboutHeader from './AboutHeader'
-import vectorAbout from '../../assets/vector/vectorabout.png'
-import vectorAboutBg from '../../assets/vector/vectoraboutbg.png'
-import vectorAbout2 from '../../assets/vector/vectorabout2.png'
 
 const AboutHero = () => {
-
 
     return (
         <>
@@ -28,9 +20,7 @@ const AboutHero = () => {
                                 We strongly believe in Chanakya Niti for financial success: "दैवम् विनतिप्रयत्नम् करोति यत्तद्विफलम्" which means "A well-planned work produces a good result." Since its inception in 1950, NNM Group has invested time and resources in gaining expertise and innovating services, aiming for profitable returns for its investors.</p>
                         </div>
                         <div className='col-lg-6 about-page-image'>
-                            {/* <img src={aboutus} /> */}
-                            <img src={vectorAbout2} />
-
+                            <img src='/vectorabout2.png' />
                         </div>
                     </div>
 
@@ -40,7 +30,7 @@ const AboutHero = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-6 about-second-image'>
-                        <img src={vectorAbout}/>
+                        <img src='/Financeaboutvector.png'/>
 
                         </div>
                         <div className='col-lg-6 about-second-content '>
@@ -64,7 +54,7 @@ const AboutHero = () => {
                         </div>
                         <div className='col-lg-3 about-vision'>
                             <h3>Our Values</h3>
-                            <p> Upholding the core values of integrity, transparency, professionalism, client-centricity</p>
+                            <p>Upholding the core values of integrity, transparency, professionalism, client-centricity</p>
                         </div>
                     </div>
                 </div>
@@ -77,11 +67,11 @@ const AboutHero = () => {
                 <div className='container '>
                     <div className='row awards-wrapper'>
                         <div className='col-lg-6 awards-image '>
-                            <img src={awardsImage} />
+                            {/* <img src={awardsImage} /> */}
 
                         </div>
                         <div className='col-lg-6 awards-content '>
-                            <h1>- Honoring the Dedication and Expertise of NNM Group</h1>
+                            {/* <h1>- Honoring the Dedication and Expertise of NNM Group</h1> */}
                         </div>
                     </div>
                 </div>

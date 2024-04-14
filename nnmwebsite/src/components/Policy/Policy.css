@@ -1,0 +1,17 @@
+.terms{
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+.terms ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+.terms-col{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}

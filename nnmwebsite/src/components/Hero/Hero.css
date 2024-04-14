@@ -1,13 +1,9 @@
-
-
 .hero {
     min-height: 110vh;
     width: 100vw;
     background-color: #09090A;
     background-size: cover;
-    /* background-position: end; */
     display: flex;
-    /* align-items: center; */
     padding-top: 5%;
 
 }
@@ -61,12 +57,10 @@
 }
 
 .custom-btn {
-    background-color: transparent;
-
-    /* color: white; */
-    background-color:#ffae42;
     width: 35%;
-    /* border: 1px solid #ffae42; */
+    border: 1px solid #ffae42;
+    background: transparent;
+    color: white;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 12px;
@@ -75,15 +69,13 @@
     letter-spacing: 1px;
     border-radius: 50px;
     cursor: pointer;
-    transition: .3s all !important;
-    border: none;
-
+    transition: .6s all !important;
 }
 
 .custom-btn:hover {
-    background-color: #edede8;
     color: black;
-    /* box-shadow: 1px 2px 2px white; */
+    box-shadow: inset 200px 0px 2px #ffae42;
+    background-color: #ffae42;
 }
 
 .custom-btn-light {
@@ -568,10 +560,11 @@ a.about-read-more {
 
 }
 
-.quotes-icon {
-    color: black;
+.quote-icon {
+    color: #ffae42;
     font-size: 30px;
-    padding: 5px;
+    margin: 1%;
+    z-index: 0;
 }
 
 .top-second span {
@@ -658,11 +651,6 @@ a.about-read-more {
     color: #09090A;
 }
 
-.team-box-wrapper {
-    display: flex;
-    justify-content: space-between;
-    /* Distribute space between items */
-}
 
 .team-box {
     flex: 0 0 calc(25% - 20px);
@@ -674,6 +662,63 @@ a.about-read-more {
 .team-box:last-child {
     margin-right: 0;
     /* Remove margin from the last box to prevent it from going down */
+}
+.team-section-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding: 0 2%;
+}
+.team-section-image{
+    display: flex;
+    justify-content: center;
+}
+
+.team-section-image img{
+    width: 300px;
+    height: 45vh;
+   
+    box-shadow: 20px 20px #ffae42;
+}
+.team-section-message{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.team-section-message h2{ 
+    letter-spacing: 3px;
+}
+.team-section-message p{
+    color: rgb(197, 197, 197);
+}
+
+.team-section-wrapper{
+    /* border: 1px solid white; */
+    padding: 5% 0;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.kmp-team-btn{
+    display: flex;
+    /* margin-top: 5%; */
+    padding: 7px 25px;
+}
+button.kmp-team-btn{
+    background-color: transparent;
+    margin: 5% auto;
+    margin-bottom: 0;
+    border: 1px solid #ffae42;
+    color: white;  
+    transition: .6s all;
+}
+button.kmp-team-btn:hover{
+    box-shadow: inset 0px 100px 5px #ffae42;
+    color: black;
 }
 
 .questions {
@@ -828,7 +873,7 @@ a.about-read-more {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1168px) {
     body {
         width: 100vw;
         overflow-x: hidden;

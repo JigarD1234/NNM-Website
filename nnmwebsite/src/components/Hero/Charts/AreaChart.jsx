@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 
 function TradingViewWidget() {
   const container = useRef();
@@ -7,7 +7,7 @@ function TradingViewWidget() {
     if (!document.getElementById('tradingview-widget-script')) {
       const script = document.createElement("script");
       script.id = 'tradingview-widget-script';
-      script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
+      script.src = "https://s3.tradingview.com/exte.0rnal-embedding/embed-widget-advanced-chart.js";
       script.type = "text/javascript";
       script.async = true;
       script.innerHTML = `

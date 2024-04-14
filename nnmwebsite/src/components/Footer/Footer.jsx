@@ -11,6 +11,16 @@ const Footer = () => {
     return (
         <>
             <footer id='footer' style={{ backgroundColor: "#09090A" }}>
+            <div className='escalation-matrix'>
+                    <div className='container'>
+                    <ul>
+                        <li>Investor Grievance Escalation Matrix</li>
+                        <li>DP Escalation Matrix</li>
+                        <li>Client Bank Account Details</li>
+                    </ul>
+                    </div>
+                </div>
+                
                 <div className='investor-wrapper'>
                     <div className='container-fluid'>
                         <div className='row investor-row'>
@@ -24,7 +34,7 @@ const Footer = () => {
                             <div className='col-lg-9 investor-marquee'>
                                 <marquee> Prevent Unauthorised transactions in your account. Update your mobile numbers/email IDs with your
                                     stock brokers / Depository Participate. Receive information of your transactions directly from Exchange on
-                                    your mobile/email at the end of the day.....</marquee>
+                                    your mobile/email at the end of the day..</marquee>
                             </div>
                         </div>
                     </div>
@@ -37,7 +47,7 @@ const Footer = () => {
                                 <h3>Privacy Policy</h3>
                                 <div className='list-content'>
                                     <ul>
-                                        <li> <FaChevronCircleRight />  CDSL E-VOTING</li>
+                                        <li> <FaChevronCircleRight /> CDSL E-VOTING</li>
                                         <li> <FaChevronCircleRight /> SEBI</li>
                                         <li> <FaChevronCircleRight /> FMC</li>
                                         <li> <FaChevronCircleRight /> NSE</li>

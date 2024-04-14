@@ -1,26 +1,20 @@
-import React, { useState } from 'react'
-import './Hero.css'
-import butterflyTransparent from '../../assets/butterflytransparentideology.png'
-import heroBulls from '../../assets/herobulls.png'
-import holdinghand from '../../assets/holdinghand.png'
-import businessImage from '../../assets/businessmanagement1.png'
-import { FaArrowRight } from "react-icons/fa6";
-import { FaArrowCircleRight, FaChartArea, FaHandshake } from "react-icons/fa";
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
+
+import { FaArrowCircleRight, FaChartArea, FaHandshake, FaArrowRight } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { GiArcheryTarget, GiGrowth } from "react-icons/gi";
-import Services from './Services'
-import investorUpdate from '../../assets/investor_updae.png'
-import AreaChart from './Charts/AreaChart'
-import Gainers from './Charts/Gainers'
-import TradingViewTickerTapeWidget from './Charts/Ticker'
-import teloswhite from '../../assets/MobileViewAppDesignwhite.png'
-import googleplay from '../../assets/googleplay.svg'
-import appStore from '../../assets/appstore.svg'
-import Testimonials from './Testimonials'
-import Team from './Team'
-import Questions from './Questions'
-import { NavLink } from 'react-router-dom'
-import Typewriter from 'typewriter-effect';
+
+import Services from './Services';
+import AreaChart from './Charts/AreaChart';
+import Gainers from './Charts/Gainers';
+import TradingViewTickerTapeWidget from './Charts/Ticker';
+import Testimonials from './Testimonials';
+import Team from './Team';
+import Questions from './Questions';
+
+import './Hero.css';
 
 const Hero = ({ handlepopupShow }) => {
   const [activeService, setActiveService] = useState("ALGO")
@@ -37,13 +31,12 @@ const Hero = ({ handlepopupShow }) => {
               <div className='hero-text'>
                 <h3 data-aos="fade-up">We Strongly Believe In Chanakya Niti For Financial Success:</h3>
                 <h1 data-aos="fade-up" data-aos-delay="100" >|| दैवम् विनतिप्रयत्नम् करोति यत्तद्विफलम् ||</h1>
-                
-               <h2 data-aos="fade-up" data-aos-delay="100"> <Typewriter className="custom-typewriter"
+                <h2 data-aos="fade-up" data-aos-delay="100"> <Typewriter className="custom-typewriter"
                   options={{
                     strings: ['A Well-Planned Work Produces a Good Result'],
                     autoStart: true,
                     loop: true,
-                    delay:50,
+                    delay: 50,
                     pauseFor: 1000
                   }}
                 /></h2>
@@ -52,9 +45,9 @@ const Hero = ({ handlepopupShow }) => {
                   className='custom-btn'>Open Account</button>
               </div>
             </div>
-            <div  className='col-lg-6 hero-img'>
-              <img data-aos="fade-up" data-aos-delay="100" src={heroBulls} />
-           
+            <div className='col-lg-6 hero-img'>
+              <img data-aos="fade-up" data-aos-delay="100" src='/herobulls.png' />
+
             </div>
           </div>
         </div>
@@ -73,7 +66,7 @@ const Hero = ({ handlepopupShow }) => {
         <div className='container'>
           <div className='butterfly-heading'>
             <h3 data-aos="fade-up" data-aos-delay="100">Just as a caterpillar transforms into a butterfly<br></br>so does wealth grow and evolve through patient nurturing and strategic investments</h3>
-            <img data-aos="fade-up" data-aos-delay="100" src={butterflyTransparent}></img>
+            <img data-aos="fade-up" data-aos-delay="100" src='/butterflytransparentideology.png' />
           </div>
         </div>
         <div className='container-fluid'>
@@ -87,18 +80,17 @@ const Hero = ({ handlepopupShow }) => {
               <NavLink to='/about' className='about-read-more'>Read More..</NavLink>
             </div>
             <div className='col-lg-5 business-image'>
-              <img src={businessImage} />
+              <img src='/businessmanagement1.png' />
             </div>
           </div>
         </div>
       </div>
-
       <div className='vision-mission'>
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6 vision-box vision-wrapper">
               <h2 data-aos="fade-up" data-aos-delay="500"><IoEyeSharp style={{ paddingBottom: '10px' }} /> OUR VISION</h2>
-              <p  data-aos="fade-up" data-aos-delay="500"><strong className='text-uppercase'>To pioneer a new benchmark</strong> in the realm of broking and finance, setting a standard that resonates not only within the dynamic landscape of India but also on a global scale. Our VISION  is to inspire confidence and propel success in the ever-evolving world of finance."</p>
+              <p data-aos="fade-up" data-aos-delay="500"><strong className='text-uppercase'>To pioneer a new benchmark</strong> in the realm of broking and finance, setting a standard that resonates not only within the dynamic landscape of India but also on a global scale. Our VISION  is to inspire confidence and propel success in the ever-evolving world of finance."</p>
             </div>
             <div className="col-lg-6 mission-box vision-wrapper">
               <h2 data-aos="fade-up" data-aos-delay="500"> <GiArcheryTarget style={{ paddingBottom: '10px', paddingRight: '5px' }} />OUR MISSION</h2>
@@ -115,7 +107,6 @@ const Hero = ({ handlepopupShow }) => {
           </div>
         </div>
       </div>
-
       <div className='our-solutions-wrapper'>
         <div className='our-solutions'>
           <div className='container-fluid'>
@@ -128,21 +119,21 @@ const Hero = ({ handlepopupShow }) => {
                 <h3 data-aos="fade-up" data-aos-delay="500">User Issues</h3>
                 <hr></hr>
                 <ul>
-                  <li  data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Lack of Investment Guidance : </strong>Retail investors often lack access to seasoned professionals for tailored advice on portfolio managmenet , investment strategies and current market trends.</li>
-                  <li  data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Lack of Research Reports : </strong>Retail investors often face challenges accessing comprehensive research reports and market analysis, which can hinder their ability to make well-informed investment decisions. .</li>
-                  <li  data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Lack of Offline Assistance Accessibility for Retail Investors :
+                  <li data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Lack of Investment Guidance : </strong>Retail investors often lack access to seasoned professionals for tailored advice on portfolio managmenet , investment strategies and current market trends.</li>
+                  <li data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Lack of Research Reports : </strong>Retail investors often face challenges accessing comprehensive research reports and market analysis, which can hinder their ability to make well-informed investment decisions. .</li>
+                  <li data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Lack of Offline Assistance Accessibility for Retail Investors :
                   </strong> Certain retail investors may prioritize offline support or in-person interactions, which may not be readily accessible on online-only platforms.</li>
                   {/* <li  data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' />  Lack of Trust :
                     : </strong>Retail investors may harbor apprehensions regarding the trustworthiness and reliability of online platforms, especially concerning asset security and regulatory compliance. </li> */}
-                  <li  data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Concerns about Value added services :
+                  <li data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Concerns about Value added services :
                   </strong> Can I as an investor access a comprehensive suite of value-added services, including IPO applications, estate planning, tax advisory, and wealth management solutions, all in one convenient location?</li>
                 </ul>
               </div>
               <div className='col-lg-4 holding-hand'>
-                <img data-aos="fade-up" data-aos-delay="500" src={holdinghand} />
+                <img data-aos="fade-up" data-aos-delay="500" src='/holdinghand.png' />
               </div>
               <div className='col-lg-4 helping-box'>
-                <h3  data-aos="fade-up" data-aos-delay="500">Our Helping Hand</h3>
+                <h3 data-aos="fade-up" data-aos-delay="500">Our Helping Hand</h3>
                 <hr></hr>
                 <ul>
                   <li data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Guidance from Skilled Professionals : </strong>
@@ -156,7 +147,7 @@ const Hero = ({ handlepopupShow }) => {
                     With over seven decades of trusted reputation , we inspire confidence in retail investors, guaranteeing the safeguarding of their assets and adherence to regulatory standards.
                   </li> */}
                   <li data-aos="fade-up" data-aos-delay="500"><strong><FaArrowCircleRight className='imported-icons' /> Value-added Services </strong>
-                  With over seven decades of trusted reputation , We also provide a variety of value-added services, including IPO applications, estate planning, tax advisory, and wealth management solutions, to meet diverse financial needs and elevate the investment experience all under one roof .
+                    With over seven decades of trusted reputation , We also provide a variety of value-added services, including IPO applications, estate planning, tax advisory, and wealth management solutions, to meet diverse financial needs and elevate the investment experience all under one roof .
                   </li>
                 </ul>
               </div>
@@ -164,7 +155,6 @@ const Hero = ({ handlepopupShow }) => {
           </div>
         </div>
       </div>
-
       <div className='services' >
         <div className='service-inner' >
           <div className='sec-headers sec-headers-light'>
@@ -207,10 +197,9 @@ const Hero = ({ handlepopupShow }) => {
           </div>
         </div>
       </div>
-
       <div className='divider-box'>
         <div className='container'>
-          <div  className='row divide-wrapper'>
+          <div className='row divide-wrapper'>
             <div data-aos="fade-up" data-aos-delay="500" className='col-lg-3 divide-box'>
               <GiGrowth className='divide-icons' />
               <h3>Empowering Your Equity Journey</h3>
@@ -226,7 +215,6 @@ const Hero = ({ handlepopupShow }) => {
           </div>
         </div>
       </div>
-         
       <div className='market-charts'>
         <div className='container'>
           <div className='row market-wrapper'>
@@ -238,7 +226,7 @@ const Hero = ({ handlepopupShow }) => {
               <button data-aos="fade-up" data-aos-delay="500" className='section-button'>Open Account</button>
             </div>
             <div className='col-lg-6 market-content-img'>
-              <img data-aos="fade-up" data-aos-delay="500" src={investorUpdate} />
+              <img data-aos="fade-up" data-aos-delay="500" src='/investor_updae.png' />
             </div>
           </div>
         </div>
@@ -262,23 +250,22 @@ const Hero = ({ handlepopupShow }) => {
           </div>
         </div>
       </div>
-      
       <div className='platforms'>
         <div className='sec-headers sec-headers-dark'>
           <h3 data-aos="fade-up" data-aos-delay="500">Our Platforms</h3>
         </div>
-        <div  className='container'>
+        <div className='container'>
           <div className='row'>
             <div className='col-lg-6 mt-5 d-flex justify-content-center'>
               {/* <img src={telos} style={{ width: "90%" }} /> */}
-              <img data-aos="fade-up" data-aos-delay="600" src={teloswhite} style={{ width: "90%" }} />
+              <img data-aos="fade-up" data-aos-delay="600" src='/MobileViewAppDesignwhite.png' style={{ width: "90%" }} />
             </div>
             <div className='col-lg-6 platform-content'>
               <h3 >Telos</h3>
               <p >Experience the epitome of elegance with our sleek user interface, meticulously designed to provide a seamless and immersive trading experience. Navigate effortlessly through complex market landscapes, empowered by intuitive features and seamless functionality at every turn <br /><br /> Telos platform is your steadfast companion, empowering you to seize every opportunity and navigate the markets with confidence and poise</p>
               <div data-aos="fade-up" data-aos-delay="600" className='google-btn'>
-                <a href='#'><img src={googleplay} /></a>
-                <a href='#'><img src={appStore} /></a>
+                <a href='#'><img src='/googleplay.svg' /></a>
+                <a href='#'><img src='/appstore.svg' /></a>
               </div>
             </div>
           </div>

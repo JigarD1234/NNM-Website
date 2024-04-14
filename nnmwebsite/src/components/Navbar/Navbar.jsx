@@ -2,9 +2,11 @@ import React from 'react'
 import { useState } from 'react'
 import './Navbar.css'
 import { NavLink } from 'react-router-dom'
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoMdPhoneLandscape, IoMdPhonePortrait } from "react-icons/io";
 import logo from '../../assets/nnmlogo.png'
 import Hamburger from './Hamburger'
+import { FaFacebook, FaLinkedin, FaMailBulk, FaMailchimp, FaPhoneSquareAlt, FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from 'react-icons/fa6';
 
 
 const Navbar = () => {
@@ -15,8 +17,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav style={{ position: "fixed",zIndex:'20' }} className="navbar">
-        <div className="container">
+      <nav style={{ position: "fixed",zIndex:'20' , paddingLeft:'5%', paddingRight:"5%" }} className="navbar">
+        <div className="container-fluid">
           <div className="logo">
             <img src={logo}/> 
           </div>
@@ -32,9 +34,9 @@ const Navbar = () => {
                 <a style={{color:"rgb(188,188,188"}}>About</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
                 <ul className='dropdown-menu'>
                   <NavLink to="/about">About Us</NavLink>
-                  <NavLink to="/management">KMP Team</NavLink>
-                  <NavLink to="/milestones">Milestones</NavLink>
-                  <NavLink to="/gallery">Gallery</NavLink>
+                  <NavLink to="/about/management">KMP Team</NavLink>
+                  <NavLink to="/about/milestones">Milestones</NavLink>
+                  <NavLink to="/about/gallery">Gallery</NavLink>
                 </ul>
               </li>
               <li>
@@ -42,14 +44,15 @@ const Navbar = () => {
               </li>
              
               <li>
-                <NavLink to="/wealth">Wealth Management</NavLink> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
-                <ul className='dropdown-menu'>
+                <NavLink to="/wealth">Wealth Management</NavLink> 
+                {/* <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} /> */}
+                {/* <ul className='dropdown-menu'>
                   <NavLink to="/wealth_products">Products</NavLink>
                   <NavLink to="/wealth_funds">Funds</NavLink>
                   <NavLink to="/wealth_returns">Returns</NavLink>
                   <NavLink to="/wealth_performance">Past Performance</NavLink>
                   
-                </ul>
+                </ul> */}
               </li>
               <li>
               <a style={{color:"rgb(188,188,188"}}>Market</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
@@ -70,8 +73,16 @@ const Navbar = () => {
               <NavLink to="/blog">Blog</NavLink></li>
  
               <li>
-              <NavLink to="/connect">Connect With Us</NavLink>
+              <NavLink to="/contact">Connect With Us</NavLink>
               </li>
+              <li id='login-nav-btn'>
+              <NavLink to="/contact">Login</NavLink>
+              </li>
+              {/* <li className='nav-list-icons'>
+                <FaLinkedin className='n-icons'/>
+                <FaXTwitter className='n-icons'/>
+                <FaFacebook className='n-icons'/>
+              </li> */}
                
 
             </ul>
