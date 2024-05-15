@@ -1,11 +1,10 @@
 .blog-section {
     padding-top: 10%;
     padding-bottom: 10%;
-    /* text-align: center; */
+    text-align: center;
     /* background-color: #09090A; */
     background: url("../../assets/blogbackground.png");
-    background-size: cover;
-    background-position: center;
+    
 }
 
 .blog-section h3 {

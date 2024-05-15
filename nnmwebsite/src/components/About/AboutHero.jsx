@@ -3,9 +3,48 @@ import AboutHeader from './AboutHeader'
 
 const AboutHero = () => {
 
+    const photos = Array.from({ length: 8 }, (_, index) => `/awards/Award${index + 1}.png`)
+
+    const awardsData = [
+        {
+            title:'AAA Technologies Private Limited',
+            paragraph:'Award for Listing of SME AAA as Market Maker and Fund Raising'
+        },
+        {
+            title:'Deep Polymers',
+            paragraph:'Award for Listing of SME Deep Polymer to act as Advisor/Market Maker/Fund Raising'
+        },
+        {
+            title:'Orissa Bengal Carrier Limited',
+            paragraph:'Award for Listing of SME OBCL to act as Advisor/Market Maker/Fund Raising'
+        },
+        {
+            title:'Suumaya Industries Limited',
+            paragraph:'Award for Listing of SME Suumaya to act as Market Maker/Fund Raising'
+        },
+        {
+            title:'Tasty Dairy Specialities',
+            paragraph:'Award for Listing of SME Tasty Dairy to act as Advisor/Market Maker/Fund Raising'
+        },
+        {
+            title:'Startup Pitch India',
+            paragraph:'Awarded for being the Moderator and Organiser'
+        },
+        {
+            title:'BSE',
+            paragraph:'Awarded for listing 300th company on the exchange'
+        },
+        {
+            title:'Ashapura Intimate fashion Ltd',
+            paragraph:'Awarded for listing 2nd SME company on the BSE SME platform as an Advisor/Market Maker/Fund Raiser'
+        },
+        
+    ]
+
+
     return (
         <>
-           <AboutHeader heading ="About"/>
+            <AboutHeader heading="About" />
             <div className='about-page-section'>
                 <div className='sec-headers'>
                     <h3>About nnm group</h3>
@@ -20,7 +59,7 @@ const AboutHero = () => {
                                 We strongly believe in Chanakya Niti for financial success: "दैवम् विनतिप्रयत्नम् करोति यत्तद्विफलम्" which means "A well-planned work produces a good result." Since its inception in 1950, NNM Group has invested time and resources in gaining expertise and innovating services, aiming for profitable returns for its investors.</p>
                         </div>
                         <div className='col-lg-6 about-page-image'>
-                            <img src='/vectorabout2.png' />
+                            <img src='/Analysis-bro-about.svg' />
                         </div>
                     </div>
 
@@ -30,19 +69,21 @@ const AboutHero = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-6 about-second-image'>
-                        <img src='/Financeaboutvector.png'/>
+                            <img src='/Analysis-pana-about.svg' />
 
                         </div>
                         <div className='col-lg-6 about-second-content '>
+                            <h3>NNM Group</h3>
                             <h2>Personalized Financial Solutions and Unwavering Commitment</h2>
-                            <p>NNM Group caters to a diverse client base, including institutions, corporations, and individuals, providing an extensive range of financial products and services. Originating from a small office with a handful of employees, our team's commitment to continuous innovation has led to a dream team of over 70+ employees today. <br /><br /> Our core value at NNM Group is a customer-first attitude, fostering strong trust relationships that result in a win-win situation for everyone associated with us. We offer tailor-made products and services, placing the customer's needs at the forefront. Employing real-time customer service through effective individual account information management, we have successfully satisfied more than 19,000 clients across various business segments. We continually build on our strengths to deliver commendable services to our expanding customer base.</p>
+                            <p>
+                                {/* NNM Group caters to a diverse client base, including institutions, corporations, and individuals, providing an extensive range of financial products and services. Originating from a small office with a handful of employees, our team's commitment to continuous innovation has led to a dream team of over 70+ employees today. <br /><br /> */}
+                                Our core value at NNM Group is a customer-first attitude, fostering strong trust relationships that result in a win-win situation for everyone associated with us. We offer tailor-made products and services, placing the customer's needs at the forefront. Employing real-time customer service through effective individual account information management, we have successfully satisfied more than 19,000 clients across various business segments. We continually build on our strengths to deliver commendable services to our expanding customer base.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='about-mission'>
-                <div className='container'>
-                    <hr></hr>
+                <div className='container-fluid'>
                     <div className='row about-vision-wrapper'>
                         <div className='col-lg-3 about-vision'>
                             <h3>Our Vision</h3>
@@ -64,19 +105,30 @@ const AboutHero = () => {
                     <h3>Awards & Recognition</h3>
 
                 </div>
-                <div className='container '>
+                <div className='container-fluid'>
                     <div className='row awards-wrapper'>
-                        <div className='col-lg-6 awards-image '>
-                            {/* <img src={awardsImage} /> */}
+                        <div className='col-lg-12 award-img-col'>
+                            {photos.map((photo, index) => (
+                                <PhotoAwards photo={photo} key={index} awardsData = {awardsData[index]} />
+                            ))}
 
-                        </div>
-                        <div className='col-lg-6 awards-content '>
-                            {/* <h1>- Honoring the Dedication and Expertise of NNM Group</h1> */}
                         </div>
                     </div>
                 </div>
             </div>
         </>
     )
+}
+
+function PhotoAwards({ photo  , awardsData }) {
+    console.log(awardsData.title)
+    return (<>
+
+        <div className='wrap-box'>
+            <img src={photo} />
+            <h1>{awardsData.title}</h1>
+            <p>{awardsData.paragraph}</p>
+        </div>
+    </>)
 }
 export default AboutHero;

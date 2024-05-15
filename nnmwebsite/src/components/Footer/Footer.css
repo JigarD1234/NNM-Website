@@ -71,97 +71,116 @@
 }
 
 .list-content ul li,
-.social-links ul li {
+.social-links ul li  {
     color: white;
-    font-size: 12px;
+    font-size: 13px;
     list-style: none;
     display: flex;
     align-items: center;
+    align-content: center;
+    margin-bottom: 2%;
     gap: 10px;
+    font-family: 'unna';
 }
-
 .registration-numbers p {
     color: white;
     font-size: 12px;
 }
-.compliance-section{
+
+.compliance-section {
     padding: 3% 0;
     /* border: 1px solid white; */
 }
-.compliance-row{
+
+.compliance-row {
     display: flex;
     align-items: start;
-    
+
 }
-.compliance-col{
+
+.compliance-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
 }
-.compliance-col h3{
+
+.compliance-col h3 {
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 1px;
     color: #ffae42;
 }
-.compliance-col ul{
+
+.compliance-col ul {
     font-size: 14px;
 }
-.compliance-outer-list{
+
+.compliance-outer-list {
     display: flex;
     gap: 5px;
     padding-top: 3%;
 
     flex-direction: column;
 }
-.compliance-outer-list li{
+
+.compliance-outer-list li {
     list-style: none;
 }
 
-.compliance-inner-list{
+.compliance-inner-list {
     display: flex;
     gap: 20px;
     padding-left: 5%;
 }
-.compliance-inner-list li{
+
+.compliance-inner-list li {
     list-style: none;
 }
-.compliance-outer-list li span{
+
+.compliance-outer-list li span {
     font-size: 20px;
 }
-.compliance-contact-list{
+
+.compliance-contact-list {
 
     display: flex;
     gap: 10px;
 }
-.compliance-contact-list li{
-    display: flex;align-items: center;
+
+.compliance-contact-list li {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
-.marquee-second{
+
+.marquee-second {
     display: flex;
     padding-bottom: 2%;
 
 }
-.second-marquee-col{
+
+.second-marquee-col {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: white;
 }
-.second-marquee-col h3{
+
+.second-marquee-col h3 {
     color: white;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ffae42;
 }
-.second-marquee-col marquee{
+
+.second-marquee-col marquee {
     font-size: 13px;
-    color:rgb(210, 210, 210);
+    color: rgb(210, 210, 210);
 }
-.copyright{
+
+.copyright {
     color: rgb(171, 171, 171);
     text-align: center;
     display: flex;
@@ -169,63 +188,73 @@
     padding: 1% 0;
     font-size: 13px;
 }
+
 .escalation-matrix {
     background-color: #1c1c1c;
 }
-.escalation-matrix ul{
+
+.escalation-matrix ul {
     color: white;
     display: flex;
     gap: 5%;
     padding: 1.5% 0;
-    
 }
-.escalation-matrix ul li{
-        list-style:none;
-        background-color: #494949;
-        color: white;
-        padding: 7px 24px;
-        font-size: 14px;
-        cursor: pointer;   
-        transition: .6s all;
+
+.escalation-matrix ul li {
+    list-style: none;
+    background-color: #494949;
+    color: white;
+    padding: 7px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .6s all;
 }
-.escalation-matrix ul li:hover{
-    /* color: #ffae42; */
-    box-shadow: inset 0px 100px 2px #ffae42 ;
+
+.escalation-matrix ul li:hover {
+    box-shadow: inset 0px 100px 2px #ffae42;
     color: black;
 }
+
 @media screen and (max-width:768px) {
-    .investor-row{
+    .investor-row {
         padding: 0px;
-        padding: 5% 5%;  
+        padding: 5% 5%;
     }
-    .footer-links{
+
+    .footer-links {
         padding: 0;
         padding: 5%;
     }
-    .footer-links .links:not(:first-child){
+
+    .footer-links .links:not(:first-child) {
         padding-top: 10%;
     }
-    .social-links{
+
+    .social-links {
         /* border: 1px solid white; */
         width: 45%;
     }
+
     .registration-numbers {
         width: 55%;
-        
+
     }
-    .compliance-section{
+
+    .compliance-section {
         /* border: 1px solid white; */
         margin: 5%;
     }
-    
-    .compliance-contact{
+
+    .compliance-contact {
         margin-top: 7%;
     }
-    .marquee-second{
+
+    .marquee-second {
         margin: 2%;
     }
-    .copyright{
+
+    .copyright {
         padding: 3% 0;
     }
-   
+
 }

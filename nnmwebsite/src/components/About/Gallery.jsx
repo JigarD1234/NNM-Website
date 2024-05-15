@@ -46,7 +46,9 @@ const Gallery = () => {
         },
         {
             id: "category4",
-            categoryName: "Outdoor"
+            categoryName: "Outdoor",
+            photos: Array.from({ length: 14 }, (_, index) => `/gallery/outdoor/outdoor${index + 1}.jpg`)
+
         }
     ];
 
@@ -114,7 +116,6 @@ const Gallery = () => {
                         className='swiper-main'
 
                         style={{
-
                             "--swiper-pagination-color": "#ffae42",
                             "--swiper-pagination-bullet-inactive-color": "#999999",
                             "--swiper-pagination-bullet-inactive-opacity": "1",
@@ -122,8 +123,6 @@ const Gallery = () => {
                             "--swiper-pagination-bullet-horizontal-gap": "3px"
                         }}
                     >
-
-
                         {categories.find(cat => cat.id === photoActive)?.photos.map((photo, index) => (
                             <>
 

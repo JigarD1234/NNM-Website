@@ -10,8 +10,8 @@ const ScrollToTop = () => {
       }, [pathname]);
     
   return (
-    <div>ScrollToTop</div>
-  )
+<>
+</>  )
 }
 
 export default ScrollToTop

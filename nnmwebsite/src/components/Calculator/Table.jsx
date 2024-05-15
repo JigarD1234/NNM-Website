@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Table = ({values , heading}) => {
-    let { turnover, brokerageRate, maxBrokerage, STTtotal, stampDuty, sebiFees,ipft,transCharge,gst,totalCharges,calculateTable } = values
+    let { turnover, brokerageRate, maxBrokerage, STTtotal, stampDuty, sebiFees,ipft,clgfees,transCharge,gst,totalCharges,calculateTable } = values
     return (
         
       <>
@@ -50,6 +50,11 @@ const Table = ({values , heading}) => {
                     <th colSpan="2">IPFT (Investor Protection Fund Turst)</th>
                     <td>{ipft}</td>
                     <td>{ipft}</td>
+                </tr>
+                <tr>
+                    <th colSpan="2">CLG Fees </th>
+                    <td>{clgfees}</td>
+                    <td>{clgfees}</td>
                 </tr>
                 <tr>
                     <th colSpan="2">Exchange Trans. Charges</th>

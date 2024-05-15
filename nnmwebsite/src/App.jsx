@@ -7,7 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import Calculator from './components/Calculator/Calculator'
 import Footer from './components/Footer/Footer'
-import Hero from './components/Hero/Hero'
+
 import About from './components/About/About'
 import Management from './components/About/Management'
 import PopupButton from './components/Popup_Button/PopupButton'
@@ -26,6 +26,17 @@ import Contact from './components/Contact/Contact'
 import ErrorPage from './components/Error/ErrorPage'
 import Wealth from './components/Wealth/Wealth';
 import TermsConditions from './components/Policy/TermsConditions';
+import Forte from './components/Forte/Forte';
+import PersonalFinance from './components/Wealth/PersonalFinance/PersonalFinance';
+import PrivacyPolicy from './components/Policy/PrivacyPolicy';
+import Refund from './components/Policy/Refund';
+import Disclaimer from './components/Policy/Disclaimer';
+import Disclosure from './components/Policy/Disclosure';
+import KmpDetails from './components/Policy/KmpDetails';
+import ScrollToTop from './components/ScrollToTop'
+import Home from './components/Home/Home';
+import WealthManagement from './components/Wealth/WealthManagement/WealthManagement';
+import Protection from './components/Wealth/Protection/Protection';
 
 
 
@@ -50,21 +61,26 @@ const App = () => {
     <>
       <Router>
         <div>
+      <ScrollToTop/>
+
           <Navbar />
+
           <PopupButton
             activePop={activePop}
             setActivePop={setActivePop}
             handlepopupChange={handlepopupChange}
             handlepopupShow={handlepopupShow} />
+            
           <Routes>
-            <Route exact path="/" element={<Hero handlepopupShow={handlepopupShow} />} />
+            
+            <Route exact path="/" element={<Home handlepopupShow={handlepopupShow} />} />
             <Route exact path="/calculator" element={<Calculator />} />
-            <Route exact path="/about" element={<About />}/>
-              
-          
+            <Route exact path="/about" element={<About />} />
+
+
             <Route path='/about/management' element={<Management />} />
-              <Route path='/about/milestones' element={<Milestone />} />
-              <Route path='/about/gallery' element={<Gallery />} />
+            <Route path='/about/milestones' element={<Milestone />} />
+            <Route path='/about/gallery' element={<Gallery />} />
             <Route exact path='/products' element={<ProductsServices />} />
             <Route exact path='/equity/gainers-and-losers' element={<GainersLosers />} />
             <Route exact path='/equity' element={<OnlineEquity />} />
@@ -74,8 +90,19 @@ const App = () => {
             <Route path="/blog/:id" element={<BlogDetails blogs={blogsData} />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<ErrorPage />} />
-            <Route path='/wealth' element={<Wealth/>} />
-            <Route path='/terms-and-conditions' element={<TermsConditions/>}/>
+            <Route path='/wealth' element={<Wealth />}>
+            </Route>
+            <Route path='/wealth/personal-finance' element={<PersonalFinance />} />
+            <Route path='/wealth/wealth-management' element={<WealthManagement/>} />
+            <Route path='/wealth/protection' element={<Protection />} />
+
+            <Route path='/terms-and-conditions' element={<TermsConditions />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+            <Route path='/refund-and-cancellation' element={<Refund/>}/>
+            <Route path='/disclaimer' element={<Disclaimer/>}/>
+            <Route path='/disclosure' element={<Disclosure/>}/>
+            <Route path='/kmp-details' element={<KmpDetails/>}/>
+            <Route path='/our-forte' element={<Forte />} />
           </Routes>
           <ReachUs />
           <Footer />

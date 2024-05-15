@@ -1,7 +1,7 @@
 import React from 'react'
 import './ProductServices.css'
 import Accordion from 'react-bootstrap/Accordion';
-import AccordionItem from '../Hero/AccordionItem';
+import AccordionItem from '../Home/AccordionItem';
 
 const ProductsServices = () => {
   return (

@@ -233,6 +233,7 @@ hr {
     animation: 2s animateTop linear infinite;
 }
 
+
 @keyframes animateTop {
     0% {
         -webkit-transform: translateX(100%);

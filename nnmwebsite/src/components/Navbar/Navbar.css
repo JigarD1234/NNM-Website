@@ -4,6 +4,7 @@
   min-height: 70px;
   width: 100%;
   background-color: #09090A;
+  padding: 1% 2% !important;
 }
 
 .logo {
@@ -25,11 +26,11 @@
 }
 
 .nav-elements ul li {
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .nav-elements ul a {
-  font-size: 16px;
+  font-size: 100%;
   font-weight: 400;
   color: rgb(188, 188, 188);
   text-decoration: none;
@@ -120,6 +121,7 @@
   .nav-elements ul {
     flex-direction: column;
     gap: 20px;
+    
   }
   .dropdown-menu a:not(:last-child) {
     margin-bottom: 0px;

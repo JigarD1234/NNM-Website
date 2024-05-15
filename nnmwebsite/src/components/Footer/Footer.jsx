@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import { FaAddressCard, FaChevronCircleRight, FaMailBulk, FaPhoneSquareAlt } from "react-icons/fa";
 import { FaAddressBook, FaMailchimp, FaMobile } from 'react-icons/fa6';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -47,33 +48,33 @@ const Footer = () => {
                                 <h3>Privacy Policy</h3>
                                 <div className='list-content'>
                                     <ul>
-                                        <li> <FaChevronCircleRight /> CDSL E-VOTING</li>
-                                        <li> <FaChevronCircleRight /> SEBI</li>
-                                        <li> <FaChevronCircleRight /> FMC</li>
-                                        <li> <FaChevronCircleRight /> NSE</li>
-                                        <li> <FaChevronCircleRight /> BSE</li>
-                                        <li> <FaChevronCircleRight /> NCX</li>
-                                        <li> <FaChevronCircleRight /> SCORES</li>
+                                        <li> <FaChevronCircleRight /> <NavLink to='https://evoting.cdslindia.com/Evoting/EvotingLogin'>CDSL E-VOTING</NavLink></li>
+                                        <li> <FaChevronCircleRight /><NavLink to='https://www.sebi.gov.in/'> SEBI</NavLink></li>
+                                        <li> <FaChevronCircleRight /><NavLink to='http://www.fmc.gov.in/index.aspx'> FMC</NavLink></li>
+                                        <li> <FaChevronCircleRight /> <NavLink to='http://www.nse-india.com/'>NSE</NavLink></li>
+                                        <li> <FaChevronCircleRight /><NavLink to='https://www.bseindia.com/'> BSE</NavLink></li>
+                                        <li> <FaChevronCircleRight /> <NavLink to='https://www.mcxindia.com/'>NCX</NavLink></li>
+                                        <li> <FaChevronCircleRight /> <NavLink to='https://scores.gov.in/scores/Welcome.html'>SCORES</NavLink></li>
                                     </ul>
                                     <ul>
-                                        <li>  <FaChevronCircleRight /> TERMS & CONDITIONS</li>
-                                        <li> <FaChevronCircleRight /> PRIVACY POLICY</li>
-                                        <li> <FaChevronCircleRight /> REFUND & CANCELLATION POLICY</li>
-                                        <li>  <FaChevronCircleRight />DISCLAIMER</li>
-                                        <li>  <FaChevronCircleRight />DISCLOSURE</li>
-                                        <li>  <FaChevronCircleRight />KMP DETAILS</li>
+                                        <li>  <FaChevronCircleRight /><NavLink to='/terms-and-conditions'> TERMS & CONDITIONS</NavLink></li>
+                                        <li> <FaChevronCircleRight /><NavLink to='/privacy-policy'> PRIVACY POLICY</NavLink></li>
+                                        <li> <FaChevronCircleRight /><NavLink to='/refund-and-cancellation-policy'> REFUND & CANCELLATION POLICY</NavLink></li>
+                                        <li>  <FaChevronCircleRight /><NavLink to='/disclaimer'>DISCLAIMER</NavLink></li>
+                                        <li>  <FaChevronCircleRight /><NavLink to='/disclosure'>DISCLOSURE</NavLink></li>
+                                        <li>  <FaChevronCircleRight /><NavLink to='/kmp-details'>KMP DETAILS</NavLink></li>
                                     </ul>
                                 </div>
                             </div>
                             <div className='col-lg-3 social-links links'>
                                 <h3>Social</h3>
                                 <ul>
-                                    <li>  <FaChevronCircleRight />HOME</li>
-                                    <li> <FaChevronCircleRight /> ABOUT US</li>
-                                    <li> <FaChevronCircleRight />PORTFOLIO</li>
-                                    <li> <FaChevronCircleRight /> TEAM</li>
-                                    <li> <FaChevronCircleRight /> BLOG</li>
-                                    <li>  <FaChevronCircleRight />PROJECT</li>
+                                    <li>  <FaChevronCircleRight /><NavLink to='/'>HOME</NavLink></li>
+                                    <li> <FaChevronCircleRight /> <NavLink to='/about'>ABOUT US</NavLink></li>
+                                    <li> <FaChevronCircleRight /><NavLink to='/services'>SERVICES</NavLink></li>
+                                    <li> <FaChevronCircleRight /><NavLink to='/wealth'> WEALTH MANAGEMENT</NavLink></li>
+                                    <li> <FaChevronCircleRight /><NavLink to='/blog'> BLOG</NavLink></li>
+                                    <li>  <FaChevronCircleRight /><NavLink to='/contact'>CONTACT</NavLink></li>
                                 </ul>
                             </div>
                             <div className='col-lg-4 registration-numbers links'>

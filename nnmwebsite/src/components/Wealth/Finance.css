@@ -1,0 +1,386 @@
+
+
+.personal-finance{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background:url('/personalfinancebg.png');
+    background-size: cover;
+    
+    justify-content: center;
+    padding-top: 5%;
+
+}
+.personal-finance h1{
+    color:white;
+}
+.personal-finance span{
+    color: #ffae42;
+    font-size: 24px;
+    float: right;
+    margin-top: 2%;
+}
+.how-to-start{
+    padding-top: 3%;
+    padding-bottom: 7%;
+}
+.steps-to-be-followed h3{
+    padding: 1% 0;
+
+}
+.steps-to-be-followed ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 5%;
+
+}
+.steps-to-be-followed ul li{
+    width: 20%;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'unna';
+    font-size: 20px;
+    padding: 2% 0;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .3s all;
+}
+.steps-to-be-followed ul li:hover{
+    opacity: 1;
+}
+.steps-to-be-followed li.steps-active{
+    opacity: 1;
+}
+.steps-to-be-followed ul li span{
+    font-size: 30px;
+    background-color: #ffae42;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    color:black;
+    padding-bottom: 2%;
+    padding: 5%;
+    border-radius: 50px;
+    margin-bottom: 5%;
+}
+.personal-finance-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-finance-img{
+    display: flex;
+    justify-content: center;
+}
+.personal-finance-img img{
+    width: 70%;
+}
+.insurance-navigation{
+    background-color: #efefef;
+    padding: 2% 0;
+}
+.insurance-navigation ul{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 3%; */
+    list-style: none; 
+    align-items: center;
+}
+.insurance-navigation ul li a{
+    font-family: 'unna';
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+    transition: .3s all;
+    font-size: 25px;
+
+}
+.insurance-navigation ul li a:hover{
+    color: black;
+}
+.insurance-navigation ul li a.active{
+    color: black;
+    box-shadow: 0px 3px #ffae42;
+    padding-bottom: 5%;
+    
+}
+.dark-bg-finance-heading span{
+    background-color: #09090A;
+    min-width: 50%;
+    color: white;
+    padding: 2%;
+    padding-right: 5%;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-family: 'unna';
+}
+
+.net-worth table{
+    
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+}
+.net-worth table thead th{
+    background-color: #ffae42;
+    font-family: 'unna';
+    font-size: 20px;
+    font-weight: 500;
+}
+.net-worth-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.net-worth .table-col{
+    display: flex;
+    justify-content: center;
+}
+.net-worth .difference-col{
+    display: flex;
+    justify-content: center;
+}
+.final-net-worth{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.final-net-worth img{
+    width: 70%;
+}
+.final-net-worth h3{
+    background-color: #ffae42;
+    border: 1px solid black;
+    padding: 3% 10%;
+    font-family: 'unna';
+    font-size: 20px;
+    font-weight: 500;
+}
+.difference-col span{
+    font-size: 30px;
+}
+.net-content-row{
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.net-content-col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec-letter-spacing-heading{
+    font-size: 14px  !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffae42;
+
+}
+.net-content-col p{
+    color: rgb(95, 95, 95);
+}
+.net-content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.net-content-img img{
+    width: 80%;
+}
+.retirement-corpus .retirement-heading{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 5%;
+}
+.retirement-corpus h1{
+    background-color: #09090A;
+    color: white;
+    padding: 2%;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    width: 60%;
+}
+.retirement-corpus ul{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 6%;
+    list-style: none;
+    margin-top: 10%;
+}
+.retirement-corpus ul li{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#ffae42;
+    padding: 5%;
+    font-size: 14px;    
+    font-family: 'unna';
+    margin-bottom: -40px;
+}
+.retirement-corpus-content{
+    background-color: transparent;
+    /* box-shadow: 1px 2px 5px gray; */
+    min-height: 30vh;
+    margin-bottom: 5%;
+    background-color: white;
+}
+.retirement-corpus-content ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    list-style: none;
+    gap: 50px;
+    padding: 4%;
+}
+.retirement-corpus-content ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.retire-row{
+    display: flex;
+    align-items: center;
+    margin: 4% 0;
+}
+.retire-img{
+    display: flex;
+}
+.retire-img img{
+    width: 90%; 
+}
+.retire-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.retire-details h3{
+    font-size: 40px;
+}
+.retire-details p{
+    color: rgb(49, 49, 49);
+}
+.debts-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.debts-col table th{
+    background-color: #ffae42;
+}
+.sip-section{
+   margin: 5% 0;
+   margin-bottom: 5%;
+}
+.sip-row{
+    display: flex;
+    align-items: center;
+}
+.sip-img img{
+    width: 70%;
+}
+.sip-img {
+    display: flex;
+    justify-content: center;
+}
+.sip-details ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+.sip-details ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sip-details ul li h3{
+    color: black;
+}
+.sip-details ul li p{
+    color: rgb(107, 107, 107);
+}
+.ready-to-start{
+    box-shadow: 1px 2px 5px gray;
+    background-color: #ffae42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    gap: 20px;
+}
+.ready-to-start p{
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+.ready-to-start button{
+    padding: 8px 24px;
+    background: transparent;
+    transition: .5s all;
+    outline:none
+}
+.ready-to-start button:hover{
+    color: white;
+    box-shadow: inset 150px 0px black;
+    background-color: #09090A;
+}
+.tips-section {
+    /* background:#edede8; */
+    padding-bottom: 5%;
+}
+.tips-section ul{
+    list-style: none;
+    display: flex;
+    margin-top: 3%;
+    gap: 4%;
+}
+.tips-section ul li{
+    text-align: center;
+    box-shadow: 1px 2px 5px gray;
+    padding: 3%;
+    background-color: white;
+    font-family: 'unna';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.tick-icon{
+    background-color: #ffae42;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 4%;
+}
+.sip-details button{
+    width: 25%;
+    margin-top: 3%;
+    padding: 6px 15px;
+    background-color: transparent;
+    color:black;
+    transition: .4s all;
+    border: 1px solid black;
+    font-family: 'unna';
+}
+.sip-details button:hover{
+    box-shadow: inset 100px 0px #ffae42;   
+    background-color: #ffae42; 
+}
+

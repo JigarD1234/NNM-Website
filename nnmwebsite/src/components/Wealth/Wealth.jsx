@@ -3,6 +3,8 @@ import './Wealth.css'
 import {  FaCircleArrowRight } from 'react-icons/fa6'
 import { MdOutlineLibraryBooks ,MdAutoGraph } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
+import { NavLink } from 'react-router-dom';
+import './Finance.css'
 
 const Wealth = () => {
   return (
@@ -48,19 +50,24 @@ const Wealth = () => {
       <div className='row wealth-box-row'>
         <div className='col-lg-4 wealth-box-col'>
           <IoPerson className='dedicated-icon'/>
-          <h2>A Dedicated  Advisor</h2>
-          <p>Your advisor1 will get to know you and what is important to you.</p>
+          <h2>Personal Finance</h2>
+          <p>At NNM, our approach to personal finance revolves around a meticulous process for building sustainable wealth and securing financial futures.</p>
+          <NavLink to='/wealth/personal-finance'>Read More..</NavLink>
              
         </div>
         <div className='col-lg-4 wealth-box-col'>
         <MdOutlineLibraryBooks className='dedicated-icon'/>
-          <h2>Comprehensive Planning</h2>
-          <p>Your advisor1 will get to know you and what is important to you.</p>
+          <h2>Wealth Management</h2>
+          <p> Our wealth management services are designed to cater to your unique needs , whether you're an individual investor,or a business owner </p>
+          <NavLink>Read More..</NavLink>
+          
         </div>
         <div className='col-lg-4 wealth-box-col'>
         <MdAutoGraph className='dedicated-icon'/>
-          <h2>Personalized Investment </h2>
-          <p>Your advisor1 will get to know you and what is important to you.</p>
+          <h2>Protection </h2>
+          <p>Our approach to life insurance revolves around offering tailored coverage options that meet the needs and priorities of individuals and families.</p>
+          <NavLink>Read More..</NavLink>
+
 
 
         </div>

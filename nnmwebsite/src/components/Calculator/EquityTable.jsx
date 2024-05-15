@@ -76,9 +76,6 @@ const EquityTable = () => {
     const calculatedValuesThird = CalculateValues(inputs.future.quantity,inputs.future.price,inputs.future.brokerage,inputs.future.minimum,inputs.future.exchange,tableThird)
 
 
-
-
-
     return (
         <>
             <div className='equity-table border'>

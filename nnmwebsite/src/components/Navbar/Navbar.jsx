@@ -17,10 +17,10 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav style={{ position: "fixed",zIndex:'20' , paddingLeft:'5%', paddingRight:"5%" }} className="navbar">
+      <nav style={{ position: "fixed",zIndex:'20' }} className="navbar">
         <div className="container-fluid">
           <div className="logo">
-            <img src={logo}/> 
+            <img src='/nnmlogo.png'/> 
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
@@ -67,7 +67,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <NavLink to="/forte">Our Forte</NavLink>
+                <NavLink to="/our-forte">Our Forte</NavLink>
               </li>
               <li>
               <NavLink to="/blog">Blog</NavLink></li>
