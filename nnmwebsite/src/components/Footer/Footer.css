@@ -214,6 +214,26 @@
     box-shadow: inset 0px 100px 2px #ffae42;
     color: black;
 }
+.popup-footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #09090a;
+    padding: 3% 7%;
+}
+.popup-footer-content h3{
+    color: white;
+}
+.popup-footer-content ul li{
+    color: rgb(180, 180, 180);
+}
+.popup-footer-content ul{
+   list-style: none;
+   text-align: justify;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
 
 @media screen and (max-width:768px) {
     .investor-row {

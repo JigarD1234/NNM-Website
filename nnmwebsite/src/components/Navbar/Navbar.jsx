@@ -17,21 +17,38 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav style={{ position: "fixed",zIndex:'20' }} className="navbar">
+
+
+      <nav style={{ position: "fixed", zIndex: '20' }} className="navbar">
         <div className="container-fluid">
           <div className="logo">
-            <img src='/nnmlogo.png'/> 
+            <NavLink to='/'> <img src='/nnmlogo.png' /> </NavLink>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
           </div>
           <div className={`nav-elements  ${showNavbar && "active"}`}>
+
+            {/* <div className='first-nav'>
+              <ul>
+                <li>
+                  Downloads
+                </li>
+                <li>
+                  Partner Us
+                </li>
+                <li>
+                  Career
+                </li>
+              </ul>
+            </div> */}
+            {/* <hr className='mt-2 mb-2'/> */}
             <ul id='main-links'>
-              <li>
+              {/* <li>
                 <NavLink to="/">Home</NavLink>
-              </li>
+              </li> */}
               <li>
-                <a style={{color:"rgb(188,188,188"}}>About</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
+                <a style={{ color: "rgb(188,188,188" }}>About</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
                 <ul className='dropdown-menu'>
                   <NavLink to="/about">About Us</NavLink>
                   <NavLink to="/about/management">KMP Team</NavLink>
@@ -42,9 +59,9 @@ const Navbar = () => {
               <li>
                 <NavLink to="/products">Products & Services</NavLink>
               </li>
-             
+
               <li>
-                <NavLink to="/wealth">Wealth Management</NavLink> 
+                <NavLink to="/wealth">Wealth Management</NavLink>
                 {/* <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} /> */}
                 {/* <ul className='dropdown-menu'>
                   <NavLink to="/wealth_products">Products</NavLink>
@@ -55,7 +72,7 @@ const Navbar = () => {
                 </ul> */}
               </li>
               <li>
-              <a style={{color:"rgb(188,188,188"}}>Market</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
+                <a style={{ color: "rgb(188,188,188" }}>Market</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
                 <ul className='dropdown-menu'>
                   <NavLink to="/equity">Equity</NavLink>
                   <NavLink to="/market2">Derivative</NavLink>
@@ -70,20 +87,27 @@ const Navbar = () => {
                 <NavLink to="/our-forte">Our Forte</NavLink>
               </li>
               <li>
-              <NavLink to="/blog">Blog</NavLink></li>
- 
+                <NavLink to="/blog">Blog</NavLink>
+              </li>
               <li>
-              <NavLink to="/contact">Connect With Us</NavLink>
+                <NavLink to="/downloads">Downloads</NavLink>
+              </li>
+              <li>
+                <NavLink to="/partner-us">Partner Us</NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/contact">Connect With Us</NavLink>
               </li>
               <li id='login-nav-btn'>
-              <NavLink to="/contact">Login</NavLink>
+                <NavLink to="/contact">Login</NavLink>
               </li>
               {/* <li className='nav-list-icons'>
                 <FaLinkedin className='n-icons'/>
                 <FaXTwitter className='n-icons'/>
                 <FaFacebook className='n-icons'/>
               </li> */}
-               
+
 
             </ul>
           </div>

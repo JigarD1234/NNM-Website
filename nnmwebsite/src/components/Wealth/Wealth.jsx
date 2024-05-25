@@ -59,14 +59,14 @@ const Wealth = () => {
         <MdOutlineLibraryBooks className='dedicated-icon'/>
           <h2>Wealth Management</h2>
           <p> Our wealth management services are designed to cater to your unique needs , whether you're an individual investor,or a business owner </p>
-          <NavLink>Read More..</NavLink>
+          <NavLink to='/wealth/wealth-management'>Read More..</NavLink>
           
         </div>
         <div className='col-lg-4 wealth-box-col'>
         <MdAutoGraph className='dedicated-icon'/>
           <h2>Protection </h2>
           <p>Our approach to life insurance revolves around offering tailored coverage options that meet the needs and priorities of individuals and families.</p>
-          <NavLink>Read More..</NavLink>
+          <NavLink to='/wealth/protection'>Read More..</NavLink>
 
 
 

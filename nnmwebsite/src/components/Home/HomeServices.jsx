@@ -27,8 +27,8 @@ const HomeServices = () => {
             </ul>
           </div>
           <div className='container'>
-            <div className='row'>
-              <div className='col-lg-8'>
+            <div className='row home-service-row'>
+              <div className='col-lg-7'>
                 <div data-aos="fade-up" data-aos-delay="500" className='service-content'>
 
                   <ServiceItem className={activeService === "Equity" ? 'service-show' : 'service-hide'} heading="Equity" desc1="Personalized services tailored to individual needs." desc2="In-depth research for informed decision-making." desc3="Goal-oriented investment strategies for long-term success." />
@@ -45,6 +45,18 @@ const HomeServices = () => {
 
                   <ServiceItem className={activeService === "IPO" ? 'service-show' : 'service-hide'} heading="IPO" desc1="Personalized services tailored to individual needs." desc2="In-depth research for informed decision-making." desc3="Goal-oriented investment strategies for long-term success." />
                 </div>
+              </div>
+              <div className='col-lg-5'>
+                 <div className='img-service-svg'>
+                   {activeService == 'Equity' && (<img src='/equity-service.svg'/>)}
+                   {activeService == 'Derivatives' && (<img src='/service-derivative.svg'/>)}
+                   {activeService == 'Commodities' && (<img src='/service-commodity.svg'/>)}
+                   {activeService == 'Currency' && (<img src='/service-currency.svg'/>)}
+                   {activeService == 'Mutual Funds' && (<img src='/service-mutual-funds.svg'/>)}
+                   {activeService == 'IPO' && (<img src='/service-ipo.svg'/>)}
+                   {activeService == 'ALGO' && (<img src='/service-algo.svg'/>)}
+                 </div>
+
               </div>
             </div>
           </div>

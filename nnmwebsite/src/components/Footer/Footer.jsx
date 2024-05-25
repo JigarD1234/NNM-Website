@@ -3,6 +3,7 @@ import './Footer.css'
 import { FaAddressCard, FaChevronCircleRight, FaMailBulk, FaPhoneSquareAlt } from "react-icons/fa";
 import { FaAddressBook, FaMailchimp, FaMobile } from 'react-icons/fa6';
 import { NavLink } from 'react-router-dom';
+import PopupFooterContent from './PopupFooterContent';
 
 
 
@@ -11,6 +12,7 @@ const Footer = () => {
 
     return (
         <>
+            <PopupFooterContent/>
             <footer id='footer' style={{ backgroundColor: "#09090A" }}>
             <div className='escalation-matrix'>
                     <div className='container'>

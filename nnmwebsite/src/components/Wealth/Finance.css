@@ -66,6 +66,9 @@
     padding: 5%;
     border-radius: 50px;
     margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .personal-finance-row{
     display: flex;
@@ -383,4 +386,63 @@
     box-shadow: inset 100px 0px #ffae42;   
     background-color: #ffae42; 
 }
+.life-insurance-list{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-bottom: 5%;
+    justify-content: center;
+    gap: 100px;
+}
 
+.life-insurance-list .life-insurance-icon{
+    font-size: 40px;
+    margin-bottom: 3%;
+    color: #ffae42;
+}
+.life-insurance-list-item h2{
+    margin-bottom: 1%;
+    font-size: 22px;
+}
+.life-insurance-list-item p{
+    font-size: 16px;
+    color: rgb(111, 111, 111);
+}
+
+.talk-to-us{
+    display: flex;
+    justify-content: center;
+    margin-bottom:5%;
+    
+}
+.talk-to-us button{
+    padding: 8px 24px;
+    background-color: #ffae42;
+    transition: .3s all;
+    border: none;
+}
+.talk-to-us button:hover{
+    background-color: black;
+    color: white;
+}
+.health-insurance-protection-row{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.health-insurance-protection-col{ 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.health-insurance-protection-col h1{
+    font-size: 60px;
+}
+.health-insurance-protection-img{
+    display: flex;
+    justify-content: center;
+}
+.health-insurance-protection-img img{
+    width: 90%;
+    
+}

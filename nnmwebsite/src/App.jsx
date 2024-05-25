@@ -37,6 +37,7 @@ import ScrollToTop from './components/ScrollToTop'
 import Home from './components/Home/Home';
 import WealthManagement from './components/Wealth/WealthManagement/WealthManagement';
 import Protection from './components/Wealth/Protection/Protection';
+import OnLoadPopup from './components/OnLoadPopup';
 
 
 
@@ -61,18 +62,19 @@ const App = () => {
     <>
       <Router>
         <div>
-      <ScrollToTop/>
+          <ScrollToTop />
 
           <Navbar />
+
 
           <PopupButton
             activePop={activePop}
             setActivePop={setActivePop}
             handlepopupChange={handlepopupChange}
             handlepopupShow={handlepopupShow} />
-            
+
           <Routes>
-            
+
             <Route exact path="/" element={<Home handlepopupShow={handlepopupShow} />} />
             <Route exact path="/calculator" element={<Calculator />} />
             <Route exact path="/about" element={<About />} />
@@ -93,15 +95,15 @@ const App = () => {
             <Route path='/wealth' element={<Wealth />}>
             </Route>
             <Route path='/wealth/personal-finance' element={<PersonalFinance />} />
-            <Route path='/wealth/wealth-management' element={<WealthManagement/>} />
+            <Route path='/wealth/wealth-management' element={<WealthManagement />} />
             <Route path='/wealth/protection' element={<Protection />} />
 
             <Route path='/terms-and-conditions' element={<TermsConditions />} />
-            <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
-            <Route path='/refund-and-cancellation' element={<Refund/>}/>
-            <Route path='/disclaimer' element={<Disclaimer/>}/>
-            <Route path='/disclosure' element={<Disclosure/>}/>
-            <Route path='/kmp-details' element={<KmpDetails/>}/>
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/refund-and-cancellation' element={<Refund />} />
+            <Route path='/disclaimer' element={<Disclaimer />} />
+            <Route path='/disclosure' element={<Disclosure />} />
+            <Route path='/kmp-details' element={<KmpDetails />} />
             <Route path='/our-forte' element={<Forte />} />
           </Routes>
           <ReachUs />
