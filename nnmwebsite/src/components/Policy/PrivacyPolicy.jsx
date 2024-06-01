@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
             <PolicyNavigation />
             <PolicySecondCol>
               <h3>Privacy Policy</h3>
-              <p>NNM Securities Private Limited does not collect personal information about individuals except when such individuals specifically provide such information on a voluntary basis.</p>
+              <p className='privacy-policy-first-para'>NNM Securities Private Limited does not collect personal information about individuals except when such individuals specifically provide such information on a voluntary basis.</p>
               <p>NNM Securities Private Limited is and attempts to be too sensitive to your privacy on the Internet. Whenever possible, NNM Securities will attempt to treat the information about you it receives on the Internet with care deemed reasonable under the circumstances. NNM Securities Private Limited uses information provided by you (if any) to measure the use of our site and to improve the content of our site. The personal information we may collect is used only by us to respond to your inquiry, we may make the e-mail addresses, of those who provide information, available to other NNM Securities Private Limited companies which have equal or better privacy policy than we do. At times cookies may be used to provide you with certain information. A cookie is a tiny element of data that a web site can send to your browser, which may then be stored on your hard drive so we can recognize you when you return. You may set your browser to notify you when you receive a cookie.</p>
 
               <h4><PiArrowCircleRightFill className='policy-icon'/>Collection and use of customer personal information:</h4>

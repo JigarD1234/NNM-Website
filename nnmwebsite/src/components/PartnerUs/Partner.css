@@ -1,0 +1,181 @@
+.partner-us{
+    padding: 10% 0;
+    padding-top: 17%;
+    background-color: black;
+    background: url('/partnerusbackground.png');
+    background-size: cover;
+}
+.partner-row{
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.partner-details-col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.partner-details-col h2{
+    font-size: 50px;
+    color: white;
+}
+.partner-details-col p{
+    text-align: justify;
+    color: rgb(211, 211, 211);
+}
+.partner-details-col span{
+    color: #ffae42;
+}
+.partner-details-col button{
+    width: 37%;
+    padding: 1.5% 2%;
+    border: none;
+    transition: .4s all;
+    background: transparent;
+    border: 1px solid #ffae42;
+    color: white;
+}
+.partner-details-col button:hover{
+    box-shadow: inset 0px 100px #ffae42;
+    color: black;
+}
+.partner-form-col form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    row-gap: 20px;
+}
+.partner-form-col form textarea{
+    width: 100%;
+    resize: none;
+}
+.partner-form-col form input{
+    width: 300px;
+    padding: 1%;
+    outline: none;
+}
+.partner-form-col form input , textarea{
+    font-family: 'unna';
+}
+.partner-form-col form textarea{
+    padding: 1%;
+    outline: none;
+}
+.partner-form-col button{
+    padding: 8px 24px;
+    background-color: #ffae42;
+    border: none;
+}
+.partner-us-button{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+.account-checklist{
+    background-color:#09090a ;
+}
+.account-checklist h2{
+    color: white;
+}
+.account-checklist ul{
+    display: flex;
+    list-style: none;
+    /* padding: 5% 0; */
+    padding-bottom: 2%;
+    padding-top: 5%;
+    justify-content:center;
+    gap: 5%;
+}
+.account-checklist ul li{
+    color: white;
+    font-family:'unna';
+    font-size: 20px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+.account-checklist ul li.checklist-active{
+    border-bottom: 3px solid #ffae42;
+    color: white;
+    opacity: 1;
+
+}
+.account-checklist p{
+   padding: 5% 0;
+   padding-top: 2%;
+   color: rgb(164, 164, 164);
+}
+.detailed-card-wrapper{
+    display: flex;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    gap: 20px;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.detailed-card{
+    width: 45%;
+}
+.detailed-card h2{
+    color: #ffae42;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.detailed-card p{
+    color: rgb(183, 183, 183);
+}
+@media screen and (max-width:868px) {
+    .partner-us{
+        padding: 0 5%;
+        padding-top: 40%;
+    }
+    .partner-details-col h2{
+        font-size: 35px;
+    }
+    .partner-details-col p{
+        font-size: 14px;
+    }
+    .partner-row{
+        flex-direction: column;
+    }
+    .partner-details-col button{
+        width: 50%;
+        padding: 3% 0;
+    }
+    .partner-form-col form input{
+        width: 155px;
+    }
+    .partner-form-col{
+        padding-bottom: 20%;
+    }
+    .account-checklist{
+        padding: 5%;
+    }
+    .account-checklist h2{
+        font-size: 20px;
+    }
+    .account-checklist ul li{
+        font-size: 15px;
+    }
+    .account-checklist ul{
+        margin-bottom: 10%;
+    }
+    .detailed-card-wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .detailed-card{
+        width: 100%;
+    }
+    .detailed-card p{
+        font-size: 12px;
+    }
+    .account-checklist p{
+        font-size: 14px;
+    }
+    
+}

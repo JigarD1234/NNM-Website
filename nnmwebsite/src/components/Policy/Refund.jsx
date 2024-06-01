@@ -14,7 +14,7 @@ const Refund = () => {
                    <PolicyNavigation/>
                    <PolicySecondCol>
                     <h3>Refund & Cancellation Policy</h3>
-                    <p>The Refund & Cancellation policy for all payments made towards account opening or any other services using any mode of payment shall stand as under:</p>
+                    <p className='privacy-policy-first-para'>The Refund & Cancellation policy for all payments made towards account opening or any other services using any mode of payment shall stand as under:</p>
                     <ul>
                         <li>
                         <PiArrowCircleRightFill className='policy-icon'/>The Fees paid towards account opening charges for enabling equities and commodities, or any other services is non-refundable.

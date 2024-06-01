@@ -56,13 +56,6 @@
     font-weight: 600;
     color: #ffae42;
 }
-
-.about-page-content p,
-.about-second-content p {
-    
-    /* margin-top: 2%; */
-}
-
 .about-page-image {
     display: flex;
     justify-content: center;
@@ -228,11 +221,11 @@
 
 
 .photo-box img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     /* border: 20px solid white; */
     background-color: white;
-    padding: 2%;
+    padding: 1.5%;
     margin: 1%;
     transition: .6s all;
     box-shadow: 1px 2px 10px black;
@@ -289,9 +282,6 @@
     border: 1px solid gray;
     /* border: 2px solid black; */
     box-shadow: 1px 2px 5px gray;
-    
-
-
 }
 
 .photo-categories h3 {
@@ -308,17 +298,12 @@
 
 .photo-modal {
     position: fixed;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
-    top: 5%;
+    top: 8%;
     z-index: 9;
     background: rgba(0, 0, 0, 0.9);
-
     width: 100%;
     height: 100vh;
     animation: dropTop .2s linear;
-
 }
 
 @keyframes dropTop {
@@ -335,8 +320,8 @@
 
 .close-photo-modal {
     position: absolute;
-    right: 15%;
-    top:8%;
+    right: 14.5%;
+    top:7%;
     width: 20%;
     z-index: 2
 
@@ -394,33 +379,280 @@
 .photo-categories img{
     width: 80%;
     margin: auto;
+
 }
+.kmp-management{
+    background: url('/kmpteambackground.png');
+    background-size: cover;
+}
+
+.management-popup{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+.management-popup-inner{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 600px;
+    min-height: 50vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.management-popup-inner .management-team-details h2::after{
+    left: 30%;
+    width: 50px;
+}
+.management-popup-inner .management-card{
+    width: 100%;
+}
+.management-popup-inner .management-team-details{
+    box-shadow: none;
+}
+.management-close-icon{
+    position: absolute;
+    right: 3%;
+    font-size: 40px;
+    cursor: pointer;
+}
+.management-popup-inner img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.kmp-management-wrapper{
+    margin: 7% 0;
+}
+
+.kmp-management-wrapper h3{
+    font-size: 30px;
+    border-right: 10px solid #ffae42;
+    border-left: 10px solid #ffae42;
+    padding: 1%;
+    border-top-right-radius: 10px;
+    box-shadow: 1px 2px 3px gray;
+    text-align: center;
+    background: #edede8;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.management-card{
+    width: 45%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.management-card p{
+    font-size: 13px;
+    /* text-align: center; */
+}
+.management-team-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 2px 5px gray;
+    padding: 6%;
+    margin-top: -50px;
+    gap: 10px;
+    
+    padding-top: 10%;
+    justify-content: center;
+    transition: .4s all;
+}
+.management-team-details span{
+    margin-top: 2%;
+    font-family: 'unna';
+    font-size: 16px;
+}
+.management-team-details p{
+    color: rgb(32, 32, 32);
+}
+.management-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+.management-team-details h2{
+    position: relative;
+    font-size: 25px;
+    
+}
+.management-team-details h2::after{
+    content: '';
+    position: absolute;
+    background-color: #ffae42;
+    width: 50px;
+    height: 3px;
+    top: 35px;
+    left: 30%;
+}
+.management-card img{
+    width: 150px;
+    height: 150px;
+   z-index: 1;
+    border-radius: 50%;
+    box-shadow: 2px 1px 10px gray;
+}
+
+.management-card h4{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 25px;
+}
+.management-second{
+    /* background-color: rgb(243, 243, 243);
+    border:1px solid black; */
+    padding: 3%;
+    cursor: pointer;
+    transition: .4s all;
+    box-shadow: 1px 2px 5px gray;
+
+    
+}
+
+.management-second .management-ic{
+    margin-left: 10px;
+    align-content: center;
+    transition: .2s all;
+}
+.management-second span{
+    font-size: 17px;
+}
+.management-second p{
+    margin-top: 5%;
+    background-color: #ffae42;
+    padding: 2% 4%;
+    align-content: center;
+    font-family: 'unna';
+    display: flex;
+    align-items: center;
+}
+
+.management-second:hover .management-ic{
+    transform: rotate(300deg);
+}
+.nnm-network-team{
+    box-shadow: 1px 2px 5px gray;
+    padding: 5% 0;
+    background: white;
+
+
+}
+.nnm-network-team ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+.nnm-network-team ul li{
+    text-align: center;
+    font-family: 'unna';
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nnm-network-team ul li:not(:last-child){
+    border-right: 2px solid #ffae42;
+
+}
+.nnm-network-team ul li h5{
+    font-size: 30px;
+}
+.securities-section{
+    padding-top: 7%;
+}
+.securities-box{
+    width: 47%;
+    padding: 5%;
+    box-shadow: 1px 5px 10px gray;
+    background-color: white;
+}
+.securities-row h1{
+    font-size: 25px;
+    position: relative;
+}
+.securities-row h1::after{
+    content: '';
+    background-color: #ffae42;
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+.department-members ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.department-icons{
+    margin-right: 5%;
+    color: #ffae42;
+    font-size: 20px;
+}
+.securities-box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    margin-bottom: 10%;
+    padding: 0;
+}
+
+.management-second:hover{
+    box-shadow: none;
+    background-color: #edede8;
+}
+
+
 @media screen and (max-width:768px) {
     .about-hero-heading{
         padding: 5%;
+    }
+    #about-hero{
+        height: 70vh;
+        padding-top: 10%;
     }
     .about-hero-heading h3 {
         font-size: 20px;
         padding-top: 5%;
     }
     .about-hero-heading h1{
-        font-size:20px;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        font-size:15px;
+        padding: 3% 5%;
     }
     .btn-three{
         font-size: 15px;
-        width: 40%;
+        width: 50%;
         padding-top: 3% !important;
         padding-bottom: 3% !important;
     }
     .about-page-content{
         padding: 7%;
     }
+    .about-page-content p{
+        font-size: 14px;
+    }
     .about-second-section{
         background: none;
         background: white;
         padding: 6%;
+    }
+    .about-second-content p{
+        font-size: 14px
     }
     .about-second-image{
         /* border: 1px solid black; */
@@ -435,18 +667,20 @@
         padding-bottom: 10%;
     }
     .about-vision-wrapper{
-        padding-top: 15%;
+        padding-bottom: 15%;
+    
     }
+    
     .about-vision-wrapper .about-vision{
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: 160px;
         padding: 5%;
     }
     .about-vision h3{
-        font-size: 15px;
+        font-size: 17px;
     }
     .about-vision p{
-        font-size: 8px;
+        font-size:9px;
     }
     .awards-content{
         /* border: 1px solid black; */
@@ -459,6 +693,10 @@
     .awards-header h3{
         font-size: 20px !important;
     }
+    .award-img-col{
+        row-gap: 50px;
+    }
+   
     .photo-categories {
         padding: 0;
         /* border: 1px solid green; */
@@ -468,9 +706,12 @@
         margin: 0;
         margin: 10% 0;
     }
+    .photo-categories ul{
+        padding-bottom: 10%;
+    }
     
     .photo-categories ul li{
-        width: 60%;
+        /* width: 60%; */
         text-align: center;
     }
     .photo-wrapper{
@@ -502,6 +743,7 @@
         padding: 0;
         width: 100%;
         margin: 0;
+        padding-top: 20%;
     }
     .gallery-slide{
         /* border: 2px solid red; */
@@ -528,9 +770,78 @@
     }
     .close-photo-modal{
         top:7%;
-        padding: 0;
+        padding-top: 20%;
         right: 0%;
         z-index: 2;
+    }
+    .wrap-box{
+        width: 100%;
+    }
+    
+    .management-card-wrapper{
+        flex-direction: column;
+        padding: 5%;
+        gap: 20px;
+    }
+    .management-card{
+        width: 100%;
+    }
+    .management-team-details h2{
+        margin-top: 10%;
+    }
+    .management-team-details span{
+        font-size: 12px;
+    }
+    .management-team-details p{
+        font-size: 11px;
+        color: rgb(138, 138, 138);
+    }
+    .management-second{
+        padding: 10% 5%;
+    }
+    
+    .nnm-network-team{
+        margin: 5%;
+    }
+    .nnm-network-team ul{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .nnm-network-team ul li{
+        width: 100%;
+        border-right: none !important;
+    }
+    .securities-section{
+        padding: 10% 5%;
+    }
+    .securities-row{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .department-name{
+        padding: 5%;
+    }
+    .department-name h1{
+        font-size: 18px;
+    }
+    .department-name h1::after{
+        top: 25px;
+        width: 50px;
+    }
+    .department-members ul li{
+        font-size: 11px;
+    }
+    .management-popup{
+        width: 100%;
+        
+    }
+    .management-popup-inner{
+        width: 350px;
+    }
+    .kmp-management-wrapper h3{
+        margin: 2% 5%;
+        font-size: 20px;
+        padding: 3%;
     }
 }
 .vertical-timeline-element-title {

@@ -14,7 +14,7 @@ const Wealth = () => {
             <div className='row wealth-row'>
                 <div className='col-lg-6 wealth-col'>
                     <h3>We Seek to Focus on</h3>
-                    <h2>Business that have the potential to become Multibaggers in long term because they pursue excellence in all facets of business and also scale up continously by expanding market share and market size</h2>
+                    <h2>Businesses that have the potential to become long-term multibaggers by excelling in all areas and consistently expanding their market share and size.</h2>
                     <h5>Initiating a discussion is the first step toward maximizing the potential of your wealth:</h5>
                     <button className='wealth-btn'>Find an Advisor</button>
                 </div>
@@ -28,10 +28,10 @@ const Wealth = () => {
     <div className='our-approach'>
       <div className='container'>
         <div className='row approach-row'>
-        <div className='col-lg-6 approach-col'>
+        <div className='col-lg-6 approach-col approach-img'>
           <img src='wealthsecondvector.png'/>
         </div>
-        <div className='col-lg-6 approach-col'>
+        <div className='col-lg-6 approach-col approach-details'>
           <h2>What is Our Approach ?</h2>
           <hr className='mt-4'></hr>
           <ul style={{textAlign:"justify"}}>
@@ -85,7 +85,7 @@ const Wealth = () => {
         <li><input type='number' placeholder='Phone'/></li>
         <li><input type='number' placeholder='Zip Code'/></li>
       </ul>
-      <h5 style={{width:'40%'}}>By providing your contact information above, you agree that a representative of NNM, the Brokerage affiliate may contact you via telephone and/or email to discuss and/or offer investment products and services that may be appropriate for you. You agree that you are providing to us your consent for us to contact you regardless of any Do Not Call or Do Not Email privacy choices you may have previously expressed until you revoke this consent, or up to 90 days. You may revoke your consent at any time by notifying the NNM representative.</h5>
+      <h5>By providing your contact information above, you agree that a representative of NNM, the Brokerage affiliate may contact you via telephone and/or email to discuss and/or offer investment products and services that may be appropriate for you. You agree that you are providing to us your consent for us to contact you regardless of any Do Not Call or Do Not Email privacy choices you may have previously expressed until you revoke this consent, or up to 90 days. You may revoke your consent at any time by notifying the NNM representative.</h5>
       <button className='wealth-advisor-btn'>Submit</button>
     </div>
    </>

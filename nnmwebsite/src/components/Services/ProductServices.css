@@ -238,7 +238,7 @@
 }
 
 .reachus-col-second ul li input {
-    width: 330px;
+    width: 290px;
     height: 40px;
     padding: 7%;
     border: none;
@@ -263,20 +263,16 @@
     /* border: 1px solid #09090A; */
     transition: .6s all;
 }
-
-
 .open-account-button button:hover {
     background-color: #09090A;
     color: white;
     box-shadow: inset 100px 0px 5px #09090A;
-
 }
 
 .service-section-row {
     padding-top: 5%;
     display: flex;
     justify-content: center;
-
     align-items: center;
     gap: 20px;
     flex-wrap: nowrap;
@@ -442,11 +438,14 @@
         letter-spacing: 20px;
     }
     .product-heading h1{
-        font-size: 70px;
+        font-size: 22px;
     }
     .product-heading h2{
         font-size:25px ;
         padding-bottom: 15%;
+    }
+    .product-heading button{
+        width: 60%;
     }
     .service-content-col {
         padding: 0;
@@ -460,5 +459,11 @@
         margin-top: -10%;
         margin-bottom: 20%;
         
+    }
+    .serv-inner-content p{
+        font-size: 14px;
+    }
+    .reachus-col ul li input{
+        width: 250px;
     }
 }

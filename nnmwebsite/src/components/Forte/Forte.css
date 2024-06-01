@@ -62,3 +62,22 @@
     font-size: 16px;
     color: rgb(223, 223, 223);
 }
+@media screen and (max-width:868px) {
+    .forte{
+        padding: 10% 4%;
+    }
+    .forte-col h1{
+        font-size: 20px;
+    }
+    .forte-col h3{
+        font-size: 20px;
+    }
+    .forte-content{
+        padding: 7%;
+    }
+    .forte-content p{
+        font-size: 14px;
+        margin-top: 15%;
+    }
+    
+}

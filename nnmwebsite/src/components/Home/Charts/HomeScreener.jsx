@@ -18,7 +18,7 @@ function HomeScreener() {
                 "defaultScreen": "volume_leaders",
                 "market": "india",
                 "showToolbar": true,
-                "colorTheme": "dark",
+                "colorTheme": "light",
                 "locale": "en"
             }`;
             container.current.appendChild(script);

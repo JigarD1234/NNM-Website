@@ -2,6 +2,7 @@
     padding: 5% 0;
     /* background-color: #edede8; */
     background: url("../../assets/contactbakcground.png");
+    padding-bottom: 0;
 }
 
 .contact-col h3 {
@@ -126,13 +127,16 @@
 
 }
 
+
 .contact-services-list h3:hover {
     cursor: pointer;
     /* background-color: #09090A; */
     box-shadow: inset 0px 200px 2px black;
     color: white;
 }
-
+.branch-sec-col img{
+    width: 100%;
+}
 
 .branch-sec-col .select {
     display: flex;
@@ -143,7 +147,10 @@
     font-size: 14px;
     margin-top: 5%;
 }
-
+.branch-sec-col{
+    /* position: relative; */
+    
+}
 .branch-sec-col .option {
     padding:5px 12px;
     min-height: 25px;
@@ -153,9 +160,10 @@
     background: white;
     box-shadow: 1px 2px 5px gray;
     border-top: #222 solid 1px;
+    width: 100%;
+
     position: absolute;
     top: 0;
-    width: 100%;
     pointer-events: none;
     order: 2;
     z-index: 1;
@@ -213,13 +221,19 @@
 }
 .branch-section{
     padding: 5% 0;
+    padding-top: 2%;
+    
 }
+
+
 .branch-sec-col img{
     width: 250px;
 }
 
 .desk-first{
     display: flex;
+    height: 50vh;
+    
     box-shadow: 1px 2px 5px gray;
 }
 .desk-first-img{
@@ -254,5 +268,48 @@
     font-family: 'unna';
     font-size: 17px;
 }
-
+@media screen and (max-width:868px) {
+    .contact-us{
+        padding: 20% 5%;
+        padding-top: 40%;
+        background: none;
+    }
+    .branch-sec-col{
+        padding: 0 5%;
+    }
+    .contact-col h1{
+        font-size: 30px;
+    }
+    .contact-col ul{
+        margin-top: 10%;
+        gap: 30px;
+    }
+    
+    .contact-col ul li{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .contact-col ul li span{
+        font-size: 14px;
+    }
+    .contact-vector{
+        justify-content: center;
+        align-items: center;
+        margin-top:20%;
+    }
+    .desk-first{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .desk-col.branch-sec-col{
+        padding: 0;
+        margin: 0;
+    }
+    .branch-sec-col .option{
+        width: 70%;
+        font-size: 12px;
+    }
+}
 

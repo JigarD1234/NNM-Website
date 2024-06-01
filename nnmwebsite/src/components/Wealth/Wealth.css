@@ -4,15 +4,11 @@
     align-items: center;
     background-color: #edede8;
     padding-top: 8%;
-    padding-bottom: 5%;
-
-    /* background: url("../../assets/vector/wealthbackground.png"); */
 }
 .wealth-col{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid black; */
 }
 .wealth-col h3{
     font-size: 16px;
@@ -20,6 +16,9 @@
     letter-spacing: 5px;
     color: #ffae42;
     margin-bottom: 2%;
+}
+.wealth-col h2{
+    font-size: 24px;
 }
 .wealth-col h5{
     font-size: 18px;
@@ -84,10 +83,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* background-color: #ffae42; */
     cursor: pointer;
-    transition: .3s all;  
-   
+    transition: .3s all; 
 }
 
 .wealth-box-col h2{
@@ -185,8 +182,6 @@
     margin: 1%;
     transition: .4s all;
     color: white;
-   
-
 }
 
 .wm-card-col{
@@ -196,10 +191,7 @@
     flex-direction: column;
     /* background-color: #f4f4f4; */
     position: relative;
-
     gap: 10px;
-
-
 }
 
 .wm-card-main h2{
@@ -294,4 +286,63 @@
     flex-direction: column;
     padding: 5% 0;
     align-items: center;
+}
+.wealth-advisor-form h5{
+    padding: 0% 7%;
+    text-align: center;
+}
+@media screen and (max-width:868px) {
+    .wealth-management{
+        padding: 0;
+        margin: 0;
+        padding: 20% 5%;
+        padding-top: 45%;
+    }
+    .wealth-col h2{
+        font-size: 19px;
+        margin: 2% 0;
+        text-align: justify;
+    }
+    .wealth-btn{
+        margin-top: 5%;
+        width: 60%;
+        margin-bottom: 15%;
+    }
+    .approach-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .approach-col{
+        padding: 5% 7%;
+    }
+    .approach-col ul li{
+        font-size: 14px;
+    }
+    .wealth-box-col{
+        padding: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0;
+    }
+    .wealth-advisor-form{
+        padding: 10% 7%;
+
+    }
+    .wealth-advisor-form h3{
+        text-align: center;
+    }
+    .wealth-advisor-form ul{
+        padding: 10% 0;
+    }
+    .wealth-advisor-form ul li input{
+        width:250px;
+    }
+    .wealth-advisor-form h5{
+        padding: 0;
+        text-align: justify;
+        margin-bottom: 5%;
+    }
+    
 }

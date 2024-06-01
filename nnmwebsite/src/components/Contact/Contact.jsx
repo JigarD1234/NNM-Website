@@ -9,7 +9,7 @@ import branchImage from '../../assets/vector/branchlocationvector.png'
 import { FaAddressBook, FaArrowAltCircleRight, FaMailBulk, FaPhone, FaPhoneAlt, FaPhoneSquareAlt, FaVoicemail } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 const Contact = () => {
-    const [selectedDesk, setSelectedDesk] = useState('Equity-Desk');
+    const [selectedDesk, setSelectedDesk] = useState('Dealer-Desk');
     const [selectedBranch, setSelectedBranch] = useState('Mumbai')
 
     const handleDeskChange = (event) => {
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className='email-section'>
+            {/* <div className='email-section'>
                 <div className='container'>
                     <div className='row email-row'>
                         <div className='col-lg-5 email-col'>
@@ -70,12 +70,12 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className='branch-section'>
+            <div className='branch-section' >
                 <div className='container'>
-                    <div className='row'>
-                        <div className='col-lg-6 desk-col branch-sec-col '>
+                    <div className='row branch-sec-row'>
+                        <div className='col-lg-6 branch-sec-col'>
                             <DeskHeader deskHeading="By Phone" />
 
                             <div className='desk-first'>
@@ -89,58 +89,69 @@ const Contact = () => {
                                             name="test"
                                             type="radio"
                                             id="opt1"
-                                            value="Equity-Desk"
-                                            checked={selectedDesk === 'Equity-Desk'}
+                                            value="Dealer-Desk"
+                                            checked={selectedDesk === 'Dealer-Desk'}
                                             onChange={handleDeskChange}
                                         />
-                                        <label htmlFor="opt1" className="option">Equity Desk</label>
+                                        <label htmlFor="opt1" className="option">Dealer Desk</label>
                                         <input
                                             className="selectopt"
                                             name="test"
                                             type="radio"
                                             id="opt2"
-                                            value="Depository-Desk"
-                                            checked={selectedDesk === 'Depository-Desk'}
+                                            value="Wealth-Desk"
+                                            checked={selectedDesk === 'Wealth-Desk'}
                                             onChange={handleDeskChange}
                                         />
-                                        <label htmlFor="opt2" className="option">Depository Desk</label>
+                                        <label htmlFor="opt2" className="option">Wealth Desk</label>
                                         <input
                                             className="selectopt"
                                             name="test"
                                             type="radio"
                                             id="opt3"
-                                            value="IPO-Desk"
-                                            checked={selectedDesk === 'IPO-Desk'}
+                                            value="E-KYC"
+                                            checked={selectedDesk === 'E-KYC'}
                                             onChange={handleDeskChange}
                                         />
-                                        <label htmlFor="opt3" className="option">Mutual Funds & IPO Desk</label>
+                                        <label htmlFor="opt3" className="option">E KYC</label>
                                         <input
                                             className="selectopt"
                                             name="test"
                                             type="radio"
                                             id="opt4"
-                                            value="Commodities-Desk"
-                                            checked={selectedDesk === 'Commodities-Desk'}
+                                            value="Compliance-Desk"
+                                            checked={selectedDesk === 'Compliance-Desk'}
                                             onChange={handleDeskChange}
                                         />
-                                        <label htmlFor="opt4" className="option">Commodities Desk</label>
+                                        <label htmlFor="opt4" className="option">Compliance Desk</label>
                                         <input
                                             className="selectopt"
                                             name="test"
                                             type="radio"
                                             id="opt5"
-                                            value="Currency-Desk"
-                                            checked={selectedDesk === 'Currency-Desk'}
+                                            value="Billing-Desk"
+                                            checked={selectedDesk === 'Billing-Desk'}
                                             onChange={handleDeskChange}
                                         />
-                                        <label htmlFor="opt5" className="option">Currency Desk</label>
+                                        <label htmlFor="opt5" className="option">Billing Desk</label>
+                                        <input
+                                            className="selectopt"
+                                            name="test"
+                                            type="radio"
+                                            id="opt6"
+                                            value="CDSL-Desk"
+                                            checked={selectedDesk === 'CDSL-Desk'}
+                                            onChange={handleDeskChange}
+                                        />
+                                        <label htmlFor="opt6" className="option">CDSL Desk</label>
                                     </div>
                                     {
-                                    selectedDesk === 'Equity-Desk'?(<DeskAddressDetails tel={0o22345667} phone = {123456789} email = "equity@gmail.com"/>):
-                                    selectedDesk === 'Depository-Desk'?(<DeskAddressDetails tel={0o22345667} phone = {456789012} email = "depository@gmail.com"/>):
-                                    selectedDesk === 'IPO-Desk'?(<DeskAddressDetails tel={0o22345667} phone = {545325242} email = "IPO@gmail.com"/>):
-                                    selectedDesk === 'Commodities-Desk'?(<DeskAddressDetails tel={0o22345667} phone = {89431413} email = "Commodities@mail.com"/>):
-                                    (<DeskAddressDetails tel={0o22345667} phone = {4324341212} email = "currency@gmail.com"/>)
+                                    selectedDesk === 'Dealer-Desk'?(<DeskAddressDetails tel='022- 40790012/12-19'  email = "dealer@nnmsecurities.com"/>):
+                                    selectedDesk === 'E-KYC'?(<DeskAddressDetails tel='022- 40790022'  email = "kyc@nnmsecurities.com"/>):
+                                    selectedDesk === 'Compliance-Desk'?(<DeskAddressDetails tel='022- 40790034'  email = "compliance@nnmsecurities.com"/>):
+                                    selectedDesk === 'Billing-Desk'?(<DeskAddressDetails tel='022- 40790029'  email = "billing@nnmsecurities.com"/>):
+                                    selectedDesk === 'Wealth-Desk' ? (<DeskAddressDetails tel='022- 40790021'  email = "wealth@nnmsecurities.com"/>):
+                                    (<DeskAddressDetails tel='022- 40790032/ 33'  email = "cdsl@nnmsecurities.com"/>)
 
                                     
                                     }
@@ -148,14 +159,14 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-6 branch-col branch-sec-col '>
+                        <div className='col-lg-6 branch-sec-col'>
                             <DeskHeader deskHeading="Our Branches" />
 
                             <div className='desk-first'>
                                 <DeskImage deskBranchImage={branchImage} />
 
                                 <div className='desk-first-title'>
-                                    <h4>Feel free to contact us by phone for any questions about our products and services. </h4>
+                                    <h4>Our offices are located to provide support and services to our clients. . </h4>
                                     <div className="select select-service" tabIndex="1">
                                         <input
                                             className="selectopt"
@@ -177,19 +188,17 @@ const Contact = () => {
                                             onChange={handleBranchChange}
                                         />
                                         <label htmlFor="branch2" className="option">Delhi</label>
-                                        <input
-                                            className="selectopt"
-                                            name="test2"
-                                            type="radio"
-                                            id="branch3"
-                                            value="Pune"
-                                            checked={selectedBranch === 'Pune'}
-                                            onChange={handleBranchChange}
-                                        />
-                                        <label htmlFor="branch3" className="option">Pune</label>
+                                        
                                         
                                     </div>  
-                                    <BranchDetails address="Andheri West NNM Securities" phone={1234550} email="nnm@gmail.com"/>
+                                    
+                                    {
+                                        selectedBranch === 'Delhi'?(
+                                            <BranchDetails address="453, AGARWAL METRO HEIGHTS,NETAJI SUBHASH PLACE, PITAMPURA, DELHI-110034" phone='11-45491175' />
+                                        ):<BranchDetails address="NNM House, B-6 & 7, Plot No. 31,
+                                        Shri Siddhivinayak Plaza, 2nd Floor, C.T. No. 602,
+                                        Village Oshiwara, Off Link Road, Andheri (West), Mumbai - 400058" phone='022-40790020, 022-22722280/81, 022-22723944' />
+                                    }
                                 </div>
                             </div>
 
@@ -224,12 +233,11 @@ const DeskImage = ({ deskBranchImage }) => {
         </>
     )
 }
-const DeskAddressDetails = ({ tel , email , phone}) => {
+const DeskAddressDetails = ({ tel , email }) => {
     return (<>
         <div className='first-desk-details'>
             <p><strong>Email : </strong><br />{email}</p>
             <p><strong>Tel : </strong><br />{tel}</p>
-            <p><strong>Phone : </strong><br />{phone}</p>
         </div>
 
     </>)
@@ -238,9 +246,8 @@ const BranchDetails = ({address , email , phone})=>{
     return(<>
     <div className='first-desk-details'>
             <p><strong>Address : </strong><br />{address}</p>
-            <p><strong>Email : </strong><br />{email}</p>
-            <p><strong>Phone : </strong><br />{phone}</p>
-        </div>
+            <p><strong>Tel : </strong><br />{phone}</p>
+    </div>
        
     </>)
 }

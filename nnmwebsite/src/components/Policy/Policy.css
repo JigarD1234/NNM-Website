@@ -122,3 +122,66 @@
     border: 1px solid rgb(50, 50, 50);
     color: rgb(238, 238, 238);
 }
+.privacy-policy-first-para{
+    margin:1px;
+}
+@media screen and (max-width:868px) {
+    .terms-col ul{
+        align-items: start;
+        padding: 10% 7%;
+        gap: 10px;
+    }
+    .policy-bg-header{
+        height: 40vh;
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 5%;
+        padding-top: 20%;
+        background-size: cover;
+        background-position-x:80%;
+
+        
+    }
+    .policy-bg-header h3{
+        font-size: 17px;
+        text-align: center;
+    }
+    .policy-detail-col{
+        padding: 0 7%;
+    }
+    .policy-detail-col h3{
+        font-size: 25px;
+    }
+    .policy-detail-col h3::after{
+        top: 50px;
+    }
+    .policy-detail-col ul{
+        margin-top: 12%;
+        gap: 18px;
+    }
+    .policy-detail-col ul li{
+        font-size: 14px;
+    }
+    .terms .privacy-policy-first-para{
+        margin-top: 15%;
+    }
+    .terms p{
+        font-size: 14px;
+    }
+    .terms h4{
+        font-size: 20px;
+        margin-top: 10%;
+    }
+    .terms .policy-icon{
+        font-size: 40px !important;
+        border-radius: 50%;
+    }
+    .kmp-policy-table{
+        padding-top: 10%;
+    }
+    .kmp-policy-table table{
+        font-size: 8px;
+    }
+    
+}

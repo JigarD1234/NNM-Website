@@ -1,0 +1,46 @@
+.investor-table{
+    margin: 10% 0;   
+}
+.investor-grievance table thead {
+    background-color: #ffae42;
+    text-align: center;
+    align-content: center;
+}
+.investor-grievance table thead th{
+    border: 1px solid black;
+    padding: 1%;
+    color: black;
+    font-family: 'unna';
+
+}
+.investor-grievance table tbody{
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+
+}
+.investor-grievance table tbody td{
+    color: rgb(242, 242, 242);
+    padding: 2% 1%;
+}
+@media screen and (max-width:868px) {
+   table tbody {
+    font-size: 7px !important;
+   }
+   table thead{
+    font-size: 10px;
+   }
+   table thead th{
+      width: 20%;
+   }
+   table thead th:first-child{
+    width: 10%;
+   }
+   .investor-grievance table thead th{
+    width: 10%;
+    text-align: center;
+   }
+  
+   
+    
+}

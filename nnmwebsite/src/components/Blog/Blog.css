@@ -175,3 +175,32 @@
 .blogDetails-details span{
     color: gray;
 }
+@media screen and (max-width:868px){
+    .blog-section{
+        display: flex;
+        align-items: center;
+        height: 60vh;
+    }
+    .blog-section .sec-headers p{
+        font-size: 14px;
+    }
+    .article-col{
+        padding-top: 10%;
+    }
+    .articles{
+        flex-direction: column;
+        /* border: 1px solid black; */
+
+    }
+    .articles .card-main{
+        width: 100%;
+    }
+    .article-second-col{
+        padding-top: 10%;
+    }
+    .current-blog-list{
+        padding-bottom: 10%;
+    }
+
+    
+}

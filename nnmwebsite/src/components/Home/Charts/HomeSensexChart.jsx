@@ -7,8 +7,6 @@ function TradingViewWidget() {
     useEffect(
         () => {
             if (!document.getElementById('tradingview-widget-script-sensex')) {
-                
-
                 const script = document.createElement("script");
                 script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
                 script.id = 'tradingview-widget-script-sensex';
@@ -20,7 +18,7 @@ function TradingViewWidget() {
           "symbol": "BSE:SENSEX",
           "interval": "D",
           "timezone": "Etc/UTC",
-          "theme": "dark",
+          "theme": "light",
           "style": "1",
           "locale": "en",
           "allow_symbol_change": true,

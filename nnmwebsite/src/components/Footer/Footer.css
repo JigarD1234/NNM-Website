@@ -198,19 +198,22 @@
     display: flex;
     gap: 5%;
     padding: 1.5% 0;
+    list-style: none;
 }
 
-.escalation-matrix ul li {
+.escalation-matrix ul li a {
     list-style: none;
     background-color: #494949;
     color: white;
-    padding: 7px 24px;
+    padding: 0;
+    padding: 10px 24px;
     font-size: 14px;
     cursor: pointer;
     transition: .6s all;
+    align-content: center;
 }
 
-.escalation-matrix ul li:hover {
+.escalation-matrix ul li a:hover {
     box-shadow: inset 0px 100px 2px #ffae42;
     color: black;
 }
@@ -276,5 +279,24 @@
     .copyright {
         padding: 3% 0;
     }
+    .popup-footer-content{
+        padding: 10% 7%;
+    }
+    .popup-footer-content ul li{
+        font-size: 14px;
+    }
+    .escalation-matrix ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 7% 7%;
+        justify-content: center;
+
+    }
+    .escalation-matrix ul li a{
+        font-size: 12px;
+    }
+    
+    
 
 }

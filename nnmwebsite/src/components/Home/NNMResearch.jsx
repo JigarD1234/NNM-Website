@@ -1,8 +1,77 @@
 import React, { useState } from 'react'
 import { FaArrowRight, FaFilePdf } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
+import ResearchCard from './ResearchCard';
 
 const NNMResearch = () => {
+    const reports = [
+        {
+            id: 1,
+            date: '24-Apr-2018',
+            heading: 'Zeal Report',
+            reportPdf:'ZEAL_REPORT'
+        },
+        {
+            id: 2,
+            date: '21-Dec-2017',
+            heading: 'Brigade Note Main',
+            reportPdf:'BRIGADE_NOTE'
+        },
+        {
+            id: 3,
+            date: '20-Dec-2017',
+            heading: 'Borosil Glass Work',
+            reportPdf:'BOROSIL_GLASS'
+        },
+        {
+            id: 4,
+            date: '19-Dec-2017',
+            heading: 'RBL Bank Note Main',
+            reportPdf:'RBL_BANK'
+        }
+        
+    ]
+    const ipos=[
+        {
+            id: 1,
+            date: '28-Mar-2024',
+            heading: 'Aluwind Architectural IPO Note    '
+        },
+        {
+            id: 2,
+            date: '26-Oct-2023',
+            heading: 'Shanthala FMCG Products Ltd'
+        },
+        {
+            id: 3,
+            date: '25-Oct-2023',
+            heading: 'On Door Concepts Limited'
+        },
+        {
+            id: 4,
+            date: '22-Sep-2023',
+            heading: 'Hi-Green Carbon'
+        },
+        
+    ]
+    const sortedReports = reports.slice().sort((a,b) => new Date(b.date) - new Date(a.date));
+    const latestReports = sortedReports.slice(0,4)
+
+    const sortedIpo = ipos.slice().sort((a,b)=> new Date(b.date) - new Date(a.date))
+    const latestIpo = sortedIpo.slice(0,4)
+
+    function handleNoteDownload(reportPdf) {
+        const pdfPath = `/pdf/${reportPdf}.pdf`;
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.target = "_blank";
+        // link.download = `${blog.ipoNotePdf}.pdf`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+
     const [activeResearch, setActiveResearch] = useState('Analysis');
 
     function handleActiveResearch(researchName) {
@@ -16,7 +85,6 @@ const NNMResearch = () => {
             </div>
             <div className='container'>
                 <div className='row nnm-research-row'>
-
                     <div className='col-lg-7'>
                         <div className='nnm-research-col'>
                             <ul>
@@ -30,17 +98,20 @@ const NNMResearch = () => {
                         <div className='research-card-wrapper'>
                             {activeResearch === 'Analysis' ? (
                                 <>
-                                    <ResearchCard date='15-Apr-2018' heading='Zeal Report' />
-                                    <ResearchCard date='15-Apr-2018' heading='Zeal Report' />
-                                    <ResearchCard date='15-Apr-2018' heading='Zeal Report' />
-                                    <ResearchCard date='15-Apr-2018' heading='Zeal Report' />
+                                    {
+                                        latestReports.map(report => (
+                                             <ResearchCard date={report.date} heading={report.heading} key={report.id} handleNoteDownload={()=>handleNoteDownload(report.reportPdf)}/>
+                                        ))
+                                    }
                                 </>
                             ) : (
                                 <>
-                                    <ResearchCard date='15-Apr-2018' heading='IPO Note' />
-                                    <ResearchCard date='15-Apr-2018' heading='IPO Note' />
-                                    <ResearchCard date='15-Apr-2018' heading='IPO Note' />
-                                    <ResearchCard date='15-Apr-2018' heading='IPO Note' />
+                                {
+                                        latestIpo.map(ipo => (
+                                             <ResearchCard date={ipo.date} heading={ipo.heading} />
+                                        ))
+                                    }
+                                    
                                 </>
 
                             )}
@@ -56,21 +127,6 @@ const NNMResearch = () => {
 
     )
 }
-function ResearchCard({ date, heading }) {
-    return (
-        <NavLink>
-            <div className='research-card'>
-                <p><FaFilePdf /></p>
-                <div className='research-card-content'>
-                    <span>{date}</span>
-                    <h3>{heading}</h3>
-                </div>
-                <div className='research-card-icon'>
-                    <FaFilePdf />
-                </div>
-            </div>
-        </NavLink>
-    )
-}
+
 
 export default NNMResearch

@@ -18,7 +18,7 @@ const ReachUs = () => {
 
             </div>
             <div className='reachus-col-second reachus-col col-lg-7 '>
-              <h3>Open Your Account Now </h3>
+              <h3>Enquire Now </h3>
               <p>Join NNM Group for personalized financial solutions driven by a customer-first approach, serving over 19,000 satisfied clients worldwide</p>
               <ul >
                 <li>

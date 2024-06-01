@@ -1,41 +1,45 @@
-
-
-.personal-finance{
+.personal-finance {
     min-height: 80vh;
     display: flex;
     align-items: center;
-    background:url('/personalfinancebg.png');
+    background: url('/personalfinancebg.png');
     background-size: cover;
-    
+
     justify-content: center;
     padding-top: 5%;
 
 }
-.personal-finance h1{
-    color:white;
+
+.personal-finance h1 {
+    color: white;
 }
-.personal-finance span{
+
+.personal-finance span {
     color: #ffae42;
     font-size: 24px;
     float: right;
     margin-top: 2%;
 }
-.how-to-start{
+
+.how-to-start {
     padding-top: 3%;
     padding-bottom: 7%;
 }
-.steps-to-be-followed h3{
+
+.steps-to-be-followed h3 {
     padding: 1% 0;
 
 }
-.steps-to-be-followed ul{
+
+.steps-to-be-followed ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
     margin-top: 5%;
 
 }
-.steps-to-be-followed ul li{
+
+.steps-to-be-followed ul li {
     width: 20%;
     /* border: 1px solid black; */
     text-align: center;
@@ -49,19 +53,22 @@
     cursor: pointer;
     transition: .3s all;
 }
-.steps-to-be-followed ul li:hover{
+
+.steps-to-be-followed ul li:hover {
     opacity: 1;
 }
-.steps-to-be-followed li.steps-active{
+
+.steps-to-be-followed li.steps-active {
     opacity: 1;
 }
-.steps-to-be-followed ul li span{
+
+.steps-to-be-followed ul li span {
     font-size: 30px;
     background-color: #ffae42;
     width: 50px;
     height: 50px;
     align-content: center;
-    color:black;
+    color: black;
     padding-bottom: 2%;
     padding: 5%;
     border-radius: 50px;
@@ -70,30 +77,36 @@
     justify-content: center;
     align-items: center;
 }
-.personal-finance-row{
+
+.personal-finance-row {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.personal-finance-img{
+
+.personal-finance-img {
     display: flex;
     justify-content: center;
 }
-.personal-finance-img img{
+
+.personal-finance-img img {
     width: 70%;
 }
-.insurance-navigation{
+
+.insurance-navigation {
     background-color: #efefef;
     padding: 2% 0;
 }
-.insurance-navigation ul{
+
+.insurance-navigation ul {
     display: flex;
     justify-content: space-around;
     /* margin-top: 3%; */
-    list-style: none; 
+    list-style: none;
     align-items: center;
 }
-.insurance-navigation ul li a{
+
+.insurance-navigation ul li a {
     font-family: 'unna';
     cursor: pointer;
     color: rgb(139, 139, 139);
@@ -101,16 +114,19 @@
     font-size: 25px;
 
 }
-.insurance-navigation ul li a:hover{
+
+.insurance-navigation ul li a:hover {
     color: black;
 }
-.insurance-navigation ul li a.active{
+
+.insurance-navigation ul li a.active {
     color: black;
     box-shadow: 0px 3px #ffae42;
     padding-bottom: 5%;
-    
+
 }
-.dark-bg-finance-heading span{
+
+.dark-bg-finance-heading span {
     background-color: #09090A;
     min-width: 50%;
     color: white;
@@ -123,43 +139,50 @@
     font-family: 'unna';
 }
 
-.net-worth table{
-    
+.net-worth table {
+
     text-align: center;
     width: 100%;
     border: 1px solid black;
 }
-.net-worth table thead th{
+
+.net-worth table thead th {
     background-color: #ffae42;
     font-family: 'unna';
     font-size: 20px;
     font-weight: 500;
 }
-.net-worth-row{
+
+.net-worth-row {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 5%;
 }
-.net-worth .table-col{
+
+.net-worth .table-col {
     display: flex;
     justify-content: center;
 }
-.net-worth .difference-col{
+
+.net-worth .difference-col {
     display: flex;
     justify-content: center;
 }
-.final-net-worth{
+
+.final-net-worth {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
-.final-net-worth img{
+
+.final-net-worth img {
     width: 70%;
 }
-.final-net-worth h3{
+
+.final-net-worth h3 {
     background-color: #ffae42;
     border: 1px solid black;
     padding: 3% 10%;
@@ -167,45 +190,53 @@
     font-size: 20px;
     font-weight: 500;
 }
-.difference-col span{
+
+.difference-col span {
     font-size: 30px;
 }
-.net-content-row{
+
+.net-content-row {
     padding: 5% 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.net-content-col{
+
+.net-content-col {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.sec-letter-spacing-heading{
-    font-size: 14px  !important;
+.sec-letter-spacing-heading {
+    font-size: 14px !important;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #ffae42;
 
 }
-.net-content-col p{
+
+.net-content-col p {
     color: rgb(95, 95, 95);
 }
-.net-content-img{
+
+.net-content-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.net-content-img img{
+
+.net-content-img img {
     width: 80%;
 }
-.retirement-corpus .retirement-heading{
+
+.retirement-corpus .retirement-heading {
     display: flex;
     justify-content: end;
     padding-bottom: 5%;
 }
-.retirement-corpus h1{
+
+.retirement-corpus h1 {
     background-color: #09090A;
     color: white;
     padding: 2%;
@@ -215,14 +246,16 @@
     word-spacing: 3px;
     width: 60%;
 }
-.retirement-corpus ul{
+
+.retirement-corpus ul {
     display: flex;
     justify-content: space-around;
     padding-right: 6%;
     list-style: none;
     margin-top: 10%;
 }
-.retirement-corpus ul li{
+
+.retirement-corpus ul li {
     width: 70px;
     height: 70px;
     display: flex;
@@ -230,20 +263,22 @@
     align-items: center;
     text-align: center;
     border-radius: 50%;
-    background-color:#ffae42;
+    background-color: #ffae42;
     padding: 5%;
-    font-size: 14px;    
+    font-size: 14px;
     font-family: 'unna';
     margin-bottom: -40px;
 }
-.retirement-corpus-content{
+
+.retirement-corpus-content {
     background-color: transparent;
     /* box-shadow: 1px 2px 5px gray; */
     min-height: 30vh;
     margin-bottom: 5%;
     background-color: white;
 }
-.retirement-corpus-content ul{
+
+.retirement-corpus-content ul {
     display: flex;
     justify-content: center;
     height: 100%;
@@ -251,77 +286,95 @@
     gap: 50px;
     padding: 4%;
 }
-.retirement-corpus-content ul li{
+
+.retirement-corpus-content ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 20px;
 }
-.retire-row{
+
+.retire-row {
     display: flex;
     align-items: center;
     margin: 4% 0;
 }
-.retire-img{
+
+.retire-img {
     display: flex;
 }
-.retire-img img{
-    width: 90%; 
+
+.retire-img img {
+    width: 90%;
 }
-.retire-details{
+
+.retire-details {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.retire-details h3{
+
+.retire-details h3 {
     font-size: 40px;
 }
-.retire-details p{
+
+.retire-details p {
     color: rgb(49, 49, 49);
 }
-.debts-row{
+
+.debts-row {
     display: flex;
     justify-content: center;
     gap: 20px;
     text-align: center;
     padding-bottom: 5%;
 }
-.debts-col table th{
+
+.debts-col table th {
     background-color: #ffae42;
 }
-.sip-section{
-   margin: 5% 0;
-   margin-bottom: 5%;
+
+.sip-section {
+    margin: 5% 0;
+    margin-bottom: 5%;
 }
-.sip-row{
+
+.sip-row {
     display: flex;
     align-items: center;
 }
-.sip-img img{
+
+.sip-img img {
     width: 70%;
 }
+
 .sip-img {
     display: flex;
     justify-content: center;
 }
-.sip-details ul{
+
+.sip-details ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
     list-style: none;
 }
-.sip-details ul li{
+
+.sip-details ul li {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.sip-details ul li h3{
+
+.sip-details ul li h3 {
     color: black;
 }
-.sip-details ul li p{
+
+.sip-details ul li p {
     color: rgb(107, 107, 107);
 }
-.ready-to-start{
+
+.ready-to-start {
     box-shadow: 1px 2px 5px gray;
     background-color: #ffae42;
     display: flex;
@@ -330,32 +383,38 @@
     padding: 5%;
     gap: 20px;
 }
-.ready-to-start p{
+
+.ready-to-start p {
     text-align: center;
     color: rgb(54, 54, 54);
 }
-.ready-to-start button{
+
+.ready-to-start button {
     padding: 8px 24px;
     background: transparent;
     transition: .5s all;
-    outline:none
+    outline: none
 }
-.ready-to-start button:hover{
+
+.ready-to-start button:hover {
     color: white;
     box-shadow: inset 150px 0px black;
     background-color: #09090A;
 }
+
 .tips-section {
     /* background:#edede8; */
     padding-bottom: 5%;
 }
-.tips-section ul{
+
+.tips-section ul {
     list-style: none;
     display: flex;
     margin-top: 3%;
     gap: 4%;
 }
-.tips-section ul li{
+
+.tips-section ul li {
     text-align: center;
     box-shadow: 1px 2px 5px gray;
     padding: 3%;
@@ -366,27 +425,31 @@
     align-items: center;
     gap: 15px;
 }
-.tick-icon{
+
+.tick-icon {
     background-color: #ffae42;
     font-size: 30px;
     border-radius: 50%;
     padding: 4%;
 }
-.sip-details button{
+
+.sip-details button {
     width: 25%;
     margin-top: 3%;
     padding: 6px 15px;
     background-color: transparent;
-    color:black;
+    color: black;
     transition: .4s all;
     border: 1px solid black;
     font-family: 'unna';
 }
-.sip-details button:hover{
-    box-shadow: inset 100px 0px #ffae42;   
-    background-color: #ffae42; 
+
+.sip-details button:hover {
+    box-shadow: inset 100px 0px #ffae42;
+    background-color: #ffae42;
 }
-.life-insurance-list{
+
+.life-insurance-list {
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -395,54 +458,395 @@
     gap: 100px;
 }
 
-.life-insurance-list .life-insurance-icon{
+.life-insurance-list .life-insurance-icon {
     font-size: 40px;
     margin-bottom: 3%;
     color: #ffae42;
 }
-.life-insurance-list-item h2{
+
+.life-insurance-list-item h2 {
     margin-bottom: 1%;
     font-size: 22px;
 }
-.life-insurance-list-item p{
+
+.life-insurance-list-item p {
     font-size: 16px;
     color: rgb(111, 111, 111);
 }
 
-.talk-to-us{
+.talk-to-us {
     display: flex;
     justify-content: center;
-    margin-bottom:5%;
-    
+    margin-bottom: 5%;
+
 }
-.talk-to-us button{
+
+.talk-to-us button {
     padding: 8px 24px;
     background-color: #ffae42;
     transition: .3s all;
     border: none;
 }
-.talk-to-us button:hover{
+
+.talk-to-us button:hover {
     background-color: black;
     color: white;
 }
-.health-insurance-protection-row{
+
+.health-insurance-protection-row {
     display: flex;
     align-items: center;
     padding-bottom: 5%;
 }
-.health-insurance-protection-col{ 
+
+.health-insurance-protection-col {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.health-insurance-protection-col h1{
+
+.health-insurance-protection-col h1 {
     font-size: 60px;
 }
-.health-insurance-protection-img{
+
+.health-insurance-protection-img {
     display: flex;
     justify-content: center;
 }
-.health-insurance-protection-img img{
+
+.health-insurance-protection-img img {
     width: 90%;
-    
+
 }
+
+@media screen and (max-width:768px) {
+    .personal-finance {
+        padding: 0 7%;
+        margin: 0;
+    }
+
+    .tips-section ul {
+        flex-direction: column;
+    }
+
+    .personal-finance-row {
+        padding: 0;
+        gap: 30px;
+        padding-top: 25%
+    }
+
+    .personal-finance-row h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .personal-finance-img {
+        padding-top: 5%;
+    }
+
+    .personal-finance-img img {
+        width: 90%;
+        padding-bottom: 20%;
+    }
+
+    .insurance-navigation {
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .insurance-navigation ul {
+        gap: 25px;
+    }
+
+    .insurance-navigation ul li a {
+        font-size: 12px;
+    }
+
+    .insurance-navigation ul li a:hover {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .steps-to-be-followed h3 {
+        text-align: center;
+        margin: 10% 0;
+    }
+
+    .steps-to-be-followed ul {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .steps-to-be-followed ul li {
+        width: 60%;
+    }
+
+    .dark-bg-finance-heading span {
+        display: block;
+        font-size: 13px;
+        text-align: center;
+        padding: 5% 5%;
+        margin: 10% 0;
+    }
+
+    .net-content-row {
+        padding: 0 5%;
+    }
+
+    .net-content-col p {
+        font-size: 14px;
+    }
+
+    .net-content-img {
+        padding: 10% 0;
+    }
+
+    .net-content-img img {
+        width: 80%;
+    }
+
+    .net-worth-row .table-col {
+        padding: 0 7%;
+    }
+
+    .table-col {
+        font-size: 14px;
+
+    }
+
+    .table-col table {
+        margin: 3% 0;
+    }
+
+    .tips-section {
+        padding: 5%;
+    }
+
+    .tips-section ul {
+        gap: 20px;
+        padding-bottom: 10%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .tips-section ul li {
+        padding: 5%;
+        width: 45%;
+        font-size: 13px;
+
+    }
+
+    .tick-icon {
+        font-size: 50px;
+    }
+
+    .retirement-corpus ul {
+        flex-wrap: wrap;
+        /* gap: 20px; */
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .retirement-corpus ul li {
+        padding: 18%;
+        font-size: 14px;
+        margin-top: 5%;
+        background-color: #ffae42;
+        color: black;
+        box-shadow: inset 1px 2px 10px #6b6359;
+
+    }
+
+    .retirement-corpus-content ul {
+        flex-direction: column;
+        margin-top: 15%;
+        padding: 5% 7%;
+    }
+
+    .retirement-corpus-content ul li {
+        font-size: 14px;
+    }
+
+    .retire-row {
+        padding: 0 3%;
+    }
+
+    .retire-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .retire-details {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .retire-details p {
+        font-size: 14px;
+    }
+
+    .debts-col {
+        padding: 0 8%;
+    }
+
+    .debts-col table {
+        font-size: 14px;
+    }
+
+    .sip-section {
+        padding: 0 5%;
+    }
+
+    .sip-details p {
+        font-size: 14px;
+    }
+
+    .sip-details button {
+        width: 60%;
+        margin-bottom: 10%;
+    }
+
+    .sip-img img {
+        width: 100%;
+    }
+
+    .ready-to-start {
+        padding: 10%;
+    }
+
+    .ready-to-start p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .wealth-management-section .sec-headers h3 {
+        font-size: 14px;
+        margin: 0 !important;
+        padding: 0;
+        padding-top: 15%;
+        font-weight: bold;
+
+    }
+
+    .wealth-management-section .sec-headers p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 10% 4%;
+        margin: 0;
+        padding-bottom: 10%;
+    }
+
+    .wealth-management-section .sec-headers h3::after {
+        top: 90px;
+        left: 30%;
+
+    }
+
+    .wm-card-wrapper {
+        padding: 0 2%;
+        gap: 5px;
+    }
+
+    .wm-card-col p {
+        font-size: 12px;
+    }
+
+    .wm-card-col .wm-icon {
+        font-size: 50px;
+    }
+
+    .why-choose-nnmwealth {
+        padding: 0 3%;
+    }
+
+    .nnmwealth-details p {
+        font-size: 14px;
+
+    }
+
+    .nnmwealth-details ul li {
+        font-size: 14px;
+    }
+
+    .nnmwealthimg-col {
+        padding: 15% 3%;
+    }
+
+    .wealth-last-section {
+        padding: 4%;
+        font-size: 14px;
+    }
+
+    .wealth-last-section h2 {
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+
+    .life-insurance {
+        padding: 10% 3%;
+        align-items: start;
+    }
+
+    .life-insurance h2 {
+        font-size: 23px;
+        margin-bottom: 3%;
+    }
+
+    .life-insurance p {
+        font-size: 14px;
+    }
+
+    .life-insurance-list {
+        gap: 30px;
+        padding: 0 10%;
+
+    }
+
+    .life-insurance-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 1px 2px 3px gray;
+        padding: 10%;
+        background-color: #ececec;
+        
+    }
+
+    .life-insurance-list-item p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .talk-to-us {
+        margin-top: 10%;
+    }
+
+    .health-insurance-protection-col {
+        padding: 0 5%;
+    }
+
+    .health-insurance-protection-col h1 {
+        padding: 0;
+        font-size: 40px;
+        margin-top: 8%;
+        text-align: center;
+    }
+    .health-insurance-protection-col h3 {
+        padding: 0 3%;
+    }
+    .health-insurance-protection-img{
+        margin: 5% 0;
+    }
+    .talk-to-us{
+        margin-bottom: 10%;
+    }
+
+}
+

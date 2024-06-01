@@ -15,7 +15,7 @@ const Protection = () => {
 
         <div className='life-insurance'>
           <h2>We Help you get the best life insurance </h2>
-          <p>we'll not only help you get the best life insurance coverages & rates, but we'll help make the process simple and personalized</p>
+          <p>We'll not only help you get the best life insurance coverages & rates, but we'll help make the process simple and personalized</p>
         </div>
         <div className='life-insurance-list row'>
           <LifeInsuranceListItem icon={<CiMobile1 className='life-insurance-icon' />} heading='Here When You Need Us' paragraph="When you need help , we're only a call away" />

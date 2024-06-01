@@ -17,9 +17,9 @@ const Footer = () => {
             <div className='escalation-matrix'>
                     <div className='container'>
                     <ul>
-                        <li>Investor Grievance Escalation Matrix</li>
-                        <li>DP Escalation Matrix</li>
-                        <li>Client Bank Account Details</li>
+                        <li><NavLink to='/investor-grievance'> Investor Grievance Escalation Matrix</NavLink></li>
+                        <li><NavLink to='/dp-escalation-matrix'>DP Escalation Matrix</NavLink></li>
+                        <li><NavLink to='/client-bank-account-details'>Client Bank Account Details</NavLink></li>
                     </ul>
                     </div>
                 </div>
@@ -144,12 +144,10 @@ const Footer = () => {
                     <div className='container'>
                         <div className='row marquee-second'>
                             <div className='col-lg-2 second-marquee-col '>
-                                    <h3>Ivnvestor Projection</h3>
+                                    <h3>Ivnvestor Protection</h3>
                             </div>
                             <div className='col-lg-10 second-marquee-col '>
-                            <marquee> Prevent Unauthorised transactions in your account. Update your mobile numbers/email IDs with your
-                                    stock brokers / Depository Participate. Receive information of your transactions directly from Exchange on
-                                    your mobile/email at the end of the day.....</marquee>
+                            <marquee> Trading and investments in Equities and Commodities are subject to market risk, there is no assurance or guarantee of the returns. Please read the Risk Disclosure Document and Do's & Don'ts prescribed by the Exchanges carefully before investing.</marquee>
                             </div>
                         </div>
                         <hr></hr>

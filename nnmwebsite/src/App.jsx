@@ -38,6 +38,12 @@ import Home from './components/Home/Home';
 import WealthManagement from './components/Wealth/WealthManagement/WealthManagement';
 import Protection from './components/Wealth/Protection/Protection';
 import OnLoadPopup from './components/OnLoadPopup';
+import Nav from './components/Nav/Nav';
+import Downloads from './components/Downloads/Downloads';
+import Investor from './components/Investor_Grievance/Investor';
+import ClientAccountDetails from './components/Investor_Grievance/ClientAccountDetails';
+import KMPManagement from './components/About/KMPManagement';
+import Partner from './components/PartnerUs/Partner';
 
 
 
@@ -63,24 +69,18 @@ const App = () => {
       <Router>
         <div>
           <ScrollToTop />
-
           <Navbar />
-
-
           <PopupButton
             activePop={activePop}
             setActivePop={setActivePop}
             handlepopupChange={handlepopupChange}
             handlepopupShow={handlepopupShow} />
-
           <Routes>
-
             <Route exact path="/" element={<Home handlepopupShow={handlepopupShow} />} />
             <Route exact path="/calculator" element={<Calculator />} />
             <Route exact path="/about" element={<About />} />
-
-
             <Route path='/about/management' element={<Management />} />
+            <Route path='/about/kmp-management' element={<KMPManagement />} />
             <Route path='/about/milestones' element={<Milestone />} />
             <Route path='/about/gallery' element={<Gallery />} />
             <Route exact path='/products' element={<ProductsServices />} />
@@ -97,7 +97,6 @@ const App = () => {
             <Route path='/wealth/personal-finance' element={<PersonalFinance />} />
             <Route path='/wealth/wealth-management' element={<WealthManagement />} />
             <Route path='/wealth/protection' element={<Protection />} />
-
             <Route path='/terms-and-conditions' element={<TermsConditions />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/refund-and-cancellation' element={<Refund />} />
@@ -105,6 +104,10 @@ const App = () => {
             <Route path='/disclosure' element={<Disclosure />} />
             <Route path='/kmp-details' element={<KmpDetails />} />
             <Route path='/our-forte' element={<Forte />} />
+            <Route path='/downloads' element={<Downloads/>}/>
+            <Route path='/investor-grievance' element={<Investor/>}/>
+            <Route path='/client-bank-account-details' element={<ClientAccountDetails/>}/>
+            <Route path='/partner-us' element={<Partner/>}/>
           </Routes>
           <ReachUs />
           <Footer />

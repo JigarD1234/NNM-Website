@@ -1,0 +1,27 @@
+.nnm-navbar{
+    /* background-color: white; */
+    background: #09090A;
+    z-index: 10;
+    position: fixed;
+}
+.nnm-navbar-row{
+    display: flex;
+    padding: 1% 2%;
+}
+.nnm-navbar-list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nnm-navbar-list ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 30px;
+    color: white;
+}
+.nnm-navbar-logo img{
+    width: 50%;
+    
+}

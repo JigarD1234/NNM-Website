@@ -8,7 +8,7 @@ const TestimonialCard = ({heading , designation ,content}) => {
         <>
             <div className='row slide-top'>
                 <div className='col-lg-3 top-first'>
-                    IMG
+                    <img src='/maleclipkart.png'/>
                 </div>
                 <div className='col-lg-9 top-second'>
                     <h3>{heading}</h3>
